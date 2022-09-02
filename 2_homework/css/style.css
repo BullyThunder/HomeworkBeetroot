@@ -1,0 +1,91 @@
+body{
+	background-color:#FFFBD8;
+}
+header{
+	padding: 0px 15px;
+}
+.header_Menu{
+	font-size: 32px;
+	padding-top: 30px;
+	background-color: #FF8C00;
+	padding-bottom: 30px;
+	padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a{
+	text-decoration: none;
+	color: #800000;
+}
+.header_icon{
+	max-width: 100px;
+	max-height: 100px;
+}
+.text_Block{
+	padding: 10px;
+	max-width: 1400px;
+}
+h1,h2{
+	padding-left: 10px;
+}
+h1{
+	display: flex;
+	font-size: 40px;
+	justify-content: center;
+}
+.history_block{
+	font-size: 18px;
+	text-align: justify;
+}
+.random_Article{
+	padding-left: 10px;
+	font-size: 17px;
+	max-width: 600px;
+}
+.color_1{
+	color: red;
+	padding-right: 5px;
+}
+.color_2{
+	color: #008000;
+	padding-right: 5px;
+}
+.color_3{
+	color: #4682B4;
+	padding-right: 5px;
+}
+.color_4{
+	color: orange;
+}
+
+.footer_Menu{
+    font-size: 32px;
+	background-color: #FF8C00;
+	padding: 15px;
+}
+.my_Cv{
+	min-width: 724px;
+	min-height: 568px;
+	margin-bottom: 15px;
+	padding: 5px;
+	border: 1px solid black;
+}
+.video_YouTube{
+	width: 400px;
+	height: 300px;
+	margin: 15px;
+}
+.iframe_block{
+	display: flex;
+	flex-direction: column;
+}
+.navigation_Menu_footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0px;
+}
