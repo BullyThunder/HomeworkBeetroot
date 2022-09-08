@@ -1,0 +1,294 @@
+
+*, *::before, *::after{
+  box-sizing: border-box;
+ 
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li{
+  list-style: none;
+}
+p {
+    margin-top: 0.5em; 
+    margin-bottom: 3px; 
+   }
+
+body{
+  font-size: 15px;
+}
+span{
+   text-decoration: none;
+}
+.container{
+	  max-width: 970px;
+    margin: 0px auto;
+    padding: 0px 235px;
+    box-sizing: content-box;
+  }
+.wrapper{
+	margin: 0px auto;
+}
+.header_Menu{
+	display: flex;
+	justify-content: center;
+	font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-right: 40px;
+}
+.header_Menu li{
+	margin-left: 40px;
+}
+
+h2{
+	font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_Caption{
+	margin-top: 0px;
+}
+.section_Image{
+	min-height: 387px;
+	min-width: 970px;
+	margin-bottom: 0px;
+}
+.section_Color{
+	margin-top: -44px;
+	background-color: #E5E5E5;
+}
+.section_Caption_about{
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+.section_Text_block{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+	font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.section_Text_last{
+	padding-bottom: 100px;
+}
+.skills_Block{
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+	margin-bottom: 0px;
+}
+.skills_Block_bottom{
+	display: flex;
+	justify-content: center;
+	font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.my_Programms{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+.skills_text{
+	font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #828282
+
+}
+.Photoshop_information{
+	padding-left: 45px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.photoshop_image{
+	max-width: 80px;
+	max-height: 80px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+}
+.star_Information{
+	max-width: 26px;
+	max-height: 26px;
+}
+.figma_image{
+	max-width: 54px;
+	max-height: 80px;
+}
+.star_Block{
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+.figma_image{
+	position: relative;
+	bottom: 12px;
+}
+.star_Block_figma{
+	position: relative;
+	top: 15px;
+}
+.skills_text_bottom{
+	position: relative;
+	bottom: 10px;
+}
+.portfolio_Block{
+	display: flex;
+	justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.portfolio_Store{
+	min-width: 970px;
+	min-height: 540px;
+}
+.portfolio_Store_text{
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  text-decoration-skip-ink:none;
+}
+.portfolio_Store_text_bottom{
+	display: flex;
+	justify-content: center;
+	font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  text-decoration-skip-ink:none;
+  position: relative;
+  bottom: 15px;
+  padding-bottom: 70px;
+}
+.reebok_store{
+	padding-bottom: 70px;
+}
+.braun_store{
+	padding-bottom: 100px;
+}
+.contacts_block{
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+.contacts_Text_block{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+  bottom: 20px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.contacts_Text_block p{
+	line-height: 0.8em;
+}
+.contacts_Button{
+	background-color: white;
+	min-width: 180px;
+	min-height: 44px;
+	border-radius: 22px;
+	z-index: 2;
+}
+.contacts_Button_Block{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.contacts_Button_text{
+	color: white;
+	z-index: 5;
+}
+INPUT[type="button"] {
+    background-color: black;
+    color: #ffe;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: center;
+   }
+.contacts_Button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.contacts_Button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.contacts_Image_block{
+	display: flex;
+	justify-content: center;
+	margin-left: 59px;
+}
+.contacts_Image_block img{
+	padding-right: 59px;
+}
+.contacts_Text_block_Bottom{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 60px;
+	font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #828282;
+  padding-bottom: 100px;
+}
+.contacts_Text_block_Bottom p{
+	line-height: 0.8em;
+}
+.contacts_Text_block_Bottom a{
+	color: #828282;
+}
+.header_Menu a{
+	color: #828282;
+}
