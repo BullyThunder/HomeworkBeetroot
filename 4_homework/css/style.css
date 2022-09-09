@@ -25,7 +25,6 @@ span{
 .container{
 	  max-width: 970px;
     margin: 0px auto;
-    padding: 0px 235px;
     box-sizing: content-box;
   }
 .wrapper{
@@ -34,7 +33,7 @@ span{
 .header_Menu{
 	display: flex;
 	justify-content: center;
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -45,44 +44,59 @@ span{
 .header_Menu li{
 	margin-left: 40px;
 }
-
-h2{
-	font-family: Open Sans;
+h1{
+	font-family: "Open Sans";
   font-size: 48px;
   font-weight: 700;
   line-height: 65px;
   letter-spacing: 0em;
   text-align: left;
+
+}
+h2{
+	font-family: "Open Sans";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+
 }
 .section_Caption{
 	margin-top: 0px;
+
 }
 .section_Image{
 	min-height: 387px;
 	min-width: 970px;
-	margin-bottom: 0px;
+	margin-bottom: -4px;
 }
 .section_Color{
-	margin-top: -44px;
 	background-color: #E5E5E5;
 }
 .section_Caption_about{
 	padding-top: 100px;
 	display: flex;
+	padding-bottom: 50px;
 	justify-content: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .section_Text_block{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 30px;
-	font-family: Open Sans;
+	padding-bottom: 30px;
+	font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
+}
+.section_Text_block p{
+	line-height: 0.8em;
 }
 .section_Text_last{
 	padding-bottom: 100px;
@@ -90,13 +104,14 @@ h2{
 .skills_Block{
 	display: flex;
 	justify-content: center;
-	padding-top: 60px;
+	margin-top: 0px;
+	padding-top: 100px;
 	margin-bottom: 0px;
 }
 .skills_Block_bottom{
 	display: flex;
 	justify-content: center;
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -110,7 +125,7 @@ h2{
 	margin-right: 80px;
 }
 .skills_text{
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 14px;
   font-weight: 700;
   line-height: 19px;
@@ -142,8 +157,8 @@ h2{
 	max-height: 80px;
 }
 .star_Block{
-	margin-top: 60px;
-	margin-bottom: 100px;
+	padding-top: 60px;
+	padding-bottom: 101px;
 }
 .figma_image{
 	position: relative;
@@ -162,6 +177,8 @@ h2{
 	justify-content: center;
   padding-top: 100px;
   padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .portfolio_Store{
 	min-width: 970px;
@@ -171,7 +188,7 @@ h2{
 	padding-top: 40px;
 	display: flex;
 	justify-content: center;
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -184,7 +201,7 @@ h2{
 .portfolio_Store_text_bottom{
 	display: flex;
 	justify-content: center;
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -204,9 +221,12 @@ h2{
 	padding-bottom: 100px;
 }
 .contacts_block{
+	margin-top: 0px;
 	padding-top: 60px;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 0px;
+	padding-bottom: 20px;
 }
 .contacts_Text_block{
 	display: flex;
@@ -215,7 +235,7 @@ h2{
 	align-items: center;
 	position: relative;
   bottom: 20px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -225,6 +245,9 @@ h2{
 }
 .contacts_Text_block p{
 	line-height: 0.8em;
+}
+.header_Menu .header_color{
+	color: black;
 }
 .contacts_Button{
 	background-color: white;
@@ -245,7 +268,7 @@ h2{
 INPUT[type="button"] {
     background-color: black;
     color: #ffe;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
@@ -274,7 +297,7 @@ INPUT[type="button"] {
 	flex-direction: column;
 	align-items: center;
 	padding-top: 60px;
-	font-family: Open Sans;
+	font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
