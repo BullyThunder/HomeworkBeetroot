@@ -1,0 +1,54 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+   
+  }
+  * {
+    margin: 0;
+    padding: 0;
+   }
+
+body{
+    background-color: #2B81AC;
+    box-sizing: border-box;
+    
+}
+.container{
+    max-width: 1166px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    font-family: "Lucida Sans Unicode";
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+.header_Caption{
+  margin-top: 66px;
+  margin-bottom: 40px;
+}
+.header_Caption h1,i{
+  display: inline-block;
+}
+.header_Caption h1{
+  padding-right: 4px;
+}
+.lisbon_Block{
+  display: inline-block;
+  width: 50%;
+  background-color: #3399CC;
+  border: 1px solid white;
+}
+
+.lisbon_Block > h2,p{
+  display: block;
+   text-align: center;
+   padding-top: 26px;
+   padding-bottom: 92px;
+}
+.lisbon_Block > h2{
+   padding-top: 26px;
+   padding-bottom: 92px;
+}
+.lisbon_Block >p{
+  padding-top: 26px;
+}
