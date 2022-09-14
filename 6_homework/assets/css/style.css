@@ -32,6 +32,9 @@ body{
 .header_Caption h1{
   padding-right: 4px;
 }
+.block_1{
+  display: inline-block;
+}
 .lisbon_Block{
   display: inline-block;
   width: 50%;
@@ -39,16 +42,19 @@ body{
   border: 1px solid white;
 }
 
-.lisbon_Block > h2,p{
+.lisbon_Block > h2,p,i{
   display: block;
    text-align: center;
-   padding-top: 26px;
-   padding-bottom: 92px;
+   
 }
 .lisbon_Block > h2{
    padding-top: 26px;
-   padding-bottom: 92px;
+   padding-bottom: 19px;
+   padding-left: 253px;
 }
-.lisbon_Block >p{
-  padding-top: 26px;
+.lisbon_Block > i,p{
+   text-align: center;
+}
+.content_Block{
+
 }
