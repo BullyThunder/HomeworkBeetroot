@@ -23,6 +23,7 @@ body{
     color: #FFFFFF;
 }
 .header_Caption{
+  display: block;
   margin-top: 66px;
   margin-bottom: 40px;
 }
@@ -32,29 +33,24 @@ body{
 .header_Caption h1{
   padding-right: 4px;
 }
-.block_1{
-  display: inline-block;
-}
 .lisbon_Block{
-  display: inline-block;
+  border: 1px solid white;
   width: 50%;
   background-color: #3399CC;
-  border: 1px solid white;
 }
-
-.lisbon_Block > h2,p,i{
+.lisbon_Block span{
   display: block;
-   text-align: center;
-   
+  text-align: center;
 }
-.lisbon_Block > h2{
-   padding-top: 26px;
-   padding-bottom: 19px;
-   padding-left: 253px;
+.lisbon_Block h2{
+  padding-top: 26px;
+  padding-bottom: 19px;
 }
-.lisbon_Block > i,p{
-   text-align: center;
+.lisbon_Block p{
+  padding-bottom: 39px;
 }
-.content_Block{
 
+.default_Block{
+  display: inline;
+  width: 25%;
 }
