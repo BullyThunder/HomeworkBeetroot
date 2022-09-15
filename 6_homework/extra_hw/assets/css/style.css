@@ -53,4 +53,5 @@ body{
 .default_Block{
   display: inline;
   width: 25%;
+  vertical-align: middle;
 }
