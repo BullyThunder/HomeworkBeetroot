@@ -23,6 +23,7 @@ body{
     color: #FFFFFF;
 }
 .header_Caption{
+  font-size: 22px;
   display: block;
   margin-top: 66px;
   margin-bottom: 40px;
@@ -37,6 +38,8 @@ body{
   border: 1px solid white;
   width: 50%;
   background-color: #3399CC;
+  display: inline-block;
+  font-size: 22px;
 }
 .lisbon_Block span{
   display: block;
@@ -49,9 +52,20 @@ body{
 .lisbon_Block p{
   padding-bottom: 39px;
 }
-
+.block_1{
+  display: block;
+  font-size: 0px;
+}
 .default_Block{
-  display: inline;
+  font-size: 22px;
+  display: inline-block;
   width: 25%;
-  vertical-align: middle;
+  border: 1px solid white;
+  background-color:#33CCCC;
+}
+.default_Block h2{
+  padding: 26px 111px 91px 19px;
+}
+.default_Block h2{
+
 }

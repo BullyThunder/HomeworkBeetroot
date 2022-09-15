@@ -21,14 +21,11 @@
 }
 header{
   margin-top: 27px;
+   font-family: Montserrat;
 }
 .header_Content{
   display: inline-block;
 }
-.header_Image{
-  padding-right: 12px;
-}
-
 .header_Content ul{
   display: inline-block;
   text-align: center;
@@ -48,5 +45,76 @@ a{
   color: #2F281E
 }
 .product_Text{
-  color: ;
+  color: #FF9900;
+}
+.header_Button{
+  background-color: white;
+  border: 1px solid #D8D8D8;
+}
+
+.header_Content button{
+  padding: 13px 25px;
+   border-radius: 4px;
+   font-family: Montserrat;
+   font-size: 16px;
+  font-weight: 600;
+text-align: left;
+
+
+}
+.header_Content button + button{
+  background-color: #FF9900;
+  border: transparent;
+  color: white;
+}
+.header_Content ul{
+  padding-left: 198px;
+}
+ul li:last-child{
+  padding-right: 198px;
+}
+h1{
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+section div h1{
+  margin-top: 167px;
+  padding-bottom: 30px;
+}
+.main_Content span{
+  display: block;
+}
+.main_Content p{
+  line-height: 28px;
+}
+.main_Content button{
+  margin-top: 20px;
+  min-height: 50px;
+  min-width: 180px;
+  background-color: #FF9900;
+  border-radius: 4px;
+  color: white;
+  border: transparent;
+}
+.main_Content button span{
+  font-family: "Poppins";
+  min-width: 93px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.section_Content{
+  display: block;
+}
+.main_Content{
+  display: inline-block;
+}
+.image_Block {
+  display: inline-block;
 }
