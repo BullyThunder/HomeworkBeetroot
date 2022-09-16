@@ -22,6 +22,11 @@
 header{
   margin-top: 27px;
    font-family: Montserrat;
+   margin-bottom: 125px;
+}
+.header_Image{
+  vertical-align: middle;
+  padding-right: 198px;
 }
 .header_Content{
   display: inline-block;
@@ -67,9 +72,7 @@ text-align: left;
   border: transparent;
   color: white;
 }
-.header_Content ul{
-  padding-left: 198px;
-}
+
 ul li:last-child{
   padding-right: 198px;
 }
@@ -81,10 +84,7 @@ h1{
   letter-spacing: 0px;
   text-align: left;
 }
-section div h1{
-  margin-top: 167px;
-  padding-bottom: 30px;
-}
+
 .main_Content span{
   display: block;
 }
@@ -100,6 +100,9 @@ section div h1{
   color: white;
   border: transparent;
 }
+.main_Content h1{
+  padding-bottom: 30px;
+}
 .main_Content button span{
   font-family: "Poppins";
   min-width: 93px;
@@ -111,10 +114,19 @@ section div h1{
 }
 .section_Content{
   display: block;
+  vertical-align: bottom;
 }
 .main_Content{
   display: inline-block;
 }
 .image_Block {
   display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+  padding-left: 56px;
+}
+
+.main_Content{
+  vertical-align: top;
+  padding-top: 109px;
 }
