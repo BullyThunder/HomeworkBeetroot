@@ -138,9 +138,10 @@ h1{
 }
 .bg_Content{
    background-image: url('https://i.ibb.co/9VQzZwX/bg-desigh-Content.png');
-  background-size: 2821px 688.24px;
+  background-size: 2921px 388.33px;
   background-repeat: no-repeat;
   background-position: bottom;
+  border-radius: 0% 0% 55% 55%;
 }
 .design_Content_text{
   display: flex;
@@ -160,12 +161,28 @@ h1{
   justify-content: start;
   column-gap: 40px;
 }
+.design_Content_block h3{
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
 .design_Content_block{
   display: flex;
   flex-direction: column;
 }
 .design_Content_block p{
-  width: 270px;
+  max-width: 270px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+
 }
 .design_Content_image{
   max-width: 51px;
@@ -200,14 +217,77 @@ h1{
 .footer_Content{
   display: flex;
   margin-top: 73px;
+  font-family: "Montserrat";
+   font-size: 16px;
 }
 .footer_Logo{
-  padding-left: 130px;
+  padding-right: 130px;
 }
 .footer_Content_list{
   display: flex;
   flex-direction: column;
 }
+.footer_Content_list h3{
+  padding-bottom: 30px;
+}
 .footer_Content_list ul li{
   list-style: none;
+  padding-bottom: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
 }
+
+.footer_Content_list ul li:last-child{
+  padding-bottom: 70px;
+  white-space: nowrap;
+}
+
+.footer_Content_right h3{
+  max-width: 280px;
+  padding-bottom: 25px;
+}
+.footer_Content_right input::placeholder {
+  font-weight: bold;
+  color: #BCD0E5;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+.footer_Content_right input[type="tel"]{
+  min-width: 340px;
+  min-height: 50px;
+  border: #BCD0E5 1px solid;
+  padding-left: 12px;
+  font-weight: bold;
+  color: black;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.footer_Middle_container{
+  max-width: 133px;
+  margin-right: 132px;
+}
+.footer_Content_right input[type="submit"]{
+  min-width: 180px;
+  min-height: 50px;
+  background-color: #FF9900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: transparent;
+  border-radius: 4px;
+}
+
+
