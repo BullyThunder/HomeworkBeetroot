@@ -87,7 +87,9 @@ h1{
   letter-spacing: 0px;
   text-align: left;
 }
-
+.main_Content{
+  vertical-align: middle;
+}
 .main_Content span{
   display: block;
 }
@@ -137,11 +139,10 @@ h1{
   margin-top: 99px;
 }
 .bg_Content{
-   background-image: url('https://i.ibb.co/9VQzZwX/bg-desigh-Content.png');
-  background-size: 2921px 388.33px;
+   background-image: url('../img/bg_desigh_Content.png');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  border-radius: 0% 0% 55% 55%;
 }
 .design_Content_text{
   display: flex;
