@@ -127,3 +127,43 @@ img{
   grid-area: item_6;
   grid-column-start: 3;
 }
+.fashion_Block{
+   display: grid;
+  grid-gap: 30px;
+  rid-template-columns: repeat(4, 370px);
+  grid-template-rows: repeat(2, 370px);
+  grid-template-areas: "item_1 . item_2 item_2 "  
+  "item_3 item_3 . item_4"
+  "item_5 item_5 .  item_6"
+  "item_7 item_8 .  item_9";
+}
+.fashion_item_1{
+   grid-area: item_1;
+}
+.fashion_item_2{
+   grid-area: item_2;
+}
+.fashion_item_3{
+   grid-area: item_3;
+}
+.fashion_item_4{
+   grid-area: item_4;
+}
+.fashion_item_5{
+   grid-area: item_5;
+}
+.fashion_item_6{
+   grid-area: item_6;
+}
+.fashion_item_7{
+   grid-area: item_7;
+}
+.fashion_item_8{
+   grid-area: item_8;
+}
+.fashion_item_9{
+   grid-area: item_9;
+}
+.fashion_item_10{
+   grid-area: item_10;
+}
