@@ -79,11 +79,11 @@ img{
 .architectural_Block{
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(1, 370px);
-  grid-template-rows: repeat(1, 370px);
-  grid-template-areas: "item_1 . item_2 item_2"  
-  "item_3 item_3 . item_4"
-  "item_5 . item_6 item_6";
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(3, 370px);
+  grid-template-areas: "item_1 item_2 item_2"  
+  "item_3 item_3 item_4"
+  "item_5  item_6 item_6";
 }
 
 .item{
@@ -94,48 +94,44 @@ img{
 }
 .item_2{
   grid-area: item_2;
-  grid-column-start: 2;
 }
 .item_3{
   grid-area: item_3;
 }
 .item_4{
   grid-area: item_4;
-  grid-column-start: 3;
 }
 .item_5{
   grid-area: item_5;
 }
 .item_6{
   grid-area: item_6;
-  grid-column-start: 2;
 }
 .still_Block{
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(1, 370px);
   grid-template-rows: repeat(1, 370px);
-  grid-template-areas: "item_1 . item_2 item_2"  
-  "item_3 item_3 . item_4"
-  "item_5 item_5 .  item_6";
+  grid-template-areas: "item_1 item_2 item_2"  
+  "item_3 item_3 item_4"
+  "item_5 item_5 item_6";
 }
 .still_item_5{
   grid-area: item_5;
-  grid-row-start: 3;
 }
 .still_item_6{
   grid-area: item_6;
-  grid-column-start: 3;
 }
 .fashion_Block{
    display: grid;
   grid-gap: 30px;
-  rid-template-columns: repeat(4, 370px);
-  grid-template-rows: repeat(2, 370px);
-  grid-template-areas: "item_1 . item_2 item_2 "  
-  "item_3 item_3 . item_4"
-  "item_5 item_5 .  item_6"
-  "item_7 item_8 .  item_9";
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(5, 370px);
+   grid-template-areas: "item_1 item_2 item_2"  
+                         "item_4 item_2 item_5"
+                         "item_6 item_7 item_5"
+                         "item_6 item_8 item_8"
+                         "item_9 item_9 item_10";
 }
 .fashion_item_1{
    grid-area: item_1;
