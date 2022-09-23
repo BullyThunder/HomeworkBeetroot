@@ -1,0 +1,172 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+   
+  }
+  * {
+    margin: 0;
+    padding: 0;
+   }
+
+.container{
+  max-width: 1167px;
+  margin: 0px auto;
+}
+.header-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-menu-left{
+  justify-content: start;
+  display: flex;
+}
+.header-menu-left-text{
+  font-family: "Train One";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.header-menu-center{
+  display: flex;
+}
+.header-menu-style{
+  list-style: none;
+  display: flex;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header-menu-list-item{
+  padding-right: 30px;
+}
+.header-menu-list-item:last-child{
+  padding-right: 0px;
+}
+.header-nav-padding-top{
+  padding-top: 28px;
+}
+.header-menu-left-padding{
+  padding-top: 19px;
+}
+.header-image-padding{
+  padding-top: 9px;
+}
+.header-menu-button{
+  display: flex;
+  align-items: end;
+}
+.header-menu-button-padding{
+  padding-top: 20px;
+}
+.header-menu-button-style{
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 9px 15px;
+  background-color: white;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header-menu-list-item:hover{
+  color: #18B5DC;
+  cursor: pointer;
+}
+.header-menu-button-style:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #18B5DC;
+  border: 2px solid transparent;
+}
+.main-background{
+  background-color: #F6F6F6;
+}
+.main-fonts{
+   font-family: Lato;
+}
+.main-title{
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.13em;
+  text-align: center;
+}
+.main-title-padding{
+ padding-top: 150px;
+ padding-bottom: 20px;
+}
+.main-hr{
+  max-width: 45px;
+  min-height: 4px;
+  margin: 0px auto;
+  border: 1px solid #DDDBDB;
+  background: #DDDBDB;
+}
+.main-title-text-padding{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.main-title-text{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main-design-block{
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+}
+.main-design-block-section{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.main-design-block-text{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main-design-block-text-bottom{
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main-design-block-image{
+  min-width: 270px;
+  min-width: 270px;
+  margin-bottom: 20px;
+}  
+a {
+  
+}
+
+img {
+  transition: all 1s ease;
+}
+
+a:hover img {
+  opacity: 0;
+}
+
+a:hover {
+  position: relative;
+  background-image: url("../img/main-menu-background.png"), url("../img/main-menu-facebook.png");
+  background-size: contain, 100%;
+  background-repeat: no-repeat, no-repeat;
+   background-position: bottom right, center;
+}
