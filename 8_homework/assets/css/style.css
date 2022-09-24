@@ -53,7 +53,7 @@
   padding-top: 28px;
 }
 .header-menu-left-padding{
-  padding-top: 19px;
+  padding-top: 6px;
 }
 .header-image-padding{
   padding-top: 9px;
@@ -64,6 +64,9 @@
 }
 .header-menu-button-padding{
   padding-top: 20px;
+}
+.header-menu-padding{
+  padding-bottom: 11px;
 }
 .header-menu-button-style{
   border: 2px solid black;
@@ -109,8 +112,10 @@
   max-width: 45px;
   min-height: 4px;
   margin: 0px auto;
-  border: 1px solid #DDDBDB;
   background: #DDDBDB;
+}
+.main-hr hr{
+  border: 1px solid transparent;
 }
 .main-title-text-padding{
   padding-top: 40px;
@@ -151,22 +156,141 @@
   min-width: 270px;
   margin-bottom: 20px;
 }  
-a {
-  
-}
 
-img {
-  transition: all 1s ease;
-}
 
-a:hover img {
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 23px;
+  background: #18B5DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
 }
+.main-menu-icon{;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 4px;
+  background: #5DCBE6;
+  color: white;
+}
+.main-menu-icon-facebook{
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-right: 4px;
+  background: #5DCBE6;
+  color: white;
+}
 
-a:hover {
+
+.main-design-block-article{
   position: relative;
-  background-image: url("../img/main-menu-background.png"), url("../img/main-menu-facebook.png");
-  background-size: contain, 100%;
-  background-repeat: no-repeat, no-repeat;
-   background-position: bottom right, center;
+}
+.main-design-block-article:hover .overlay{
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+ .main-menu-icon:hover {
+   background: white;
+   color: #18B5DC;
+    transition: 0.5s;
+}
+ .main-menu-icon-facebook:hover{
+  background: white;
+   color: #18B5DC;
+    transition: 0.5s;
+ }
+
+.main-design-padding{
+  padding-bottom: 150px;
+}
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu-top{
+  justify-content: center;
+  display: flex;
+}
+.footer-menu-top-padding{
+  padding-top: 40px;
+  padding-bottom: 26px;
+}
+.footer-menu-top-text{
+  font-family: "Train One";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.footer-menu-center{
+  display: flex;
+  justify-content: center;
+}
+.footer-menu-style{
+  list-style: none;
+  display: flex;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-menu-list-item{
+  padding-right: 30px;
+}
+.footer-menu-list-item:last-child{
+  padding-right: 0px;
+}
+.footer-nav-padding-top{
+  padding-top: 28px;
+}
+.footer-menu-list-item:hover{
+  color: #18B5DC;
+  cursor: pointer;
+}
+.footer-menu-bottom-padding{
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+.footer-menu-bottom{
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.footer-menu-icon{
+  background: white;
+  border: 2px solid #18B5DC;
+  color: #18B5DC;
+  padding: 15px;
+}
+i{
+ font-size: 24px;
+}
+.footer-menu-icon:hover{
+  background: #18B5DC;
+  color: white;
+}
+.footer-menu-icon-facebook{
+  background: white;
+  border: 2px solid #18B5DC;
+  color: #18B5DC;
+ padding: 15px 19px;
+}
+.footer-menu-icon-facebook:hover{
+  background: #18B5DC;
+  color: white;
 }
