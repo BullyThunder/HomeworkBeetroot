@@ -12,7 +12,10 @@
    margin: 0px auto;
    box-sizing: border-box;
 }
+i{
+  font-size: 24px;
 
+}
 .bottom_left span{
   font-family: 'Roboto';
   font-style: normal;
@@ -128,7 +131,7 @@
 }
 .overlay {
   position: absolute;
-  top: 0;
+  top: 10px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -142,9 +145,16 @@
     opacity: 1;
     background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
 }
+.icon_left:hover:after {
+  opacity: 1;
+  background: white;
+}
+.item:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
 .icon_left {
   color: white;
-  font-size: 100px;
   position: absolute;
   min-width: 40px;
   min-height: 40px;
@@ -153,18 +163,25 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background:rgba(224, 224, 224, 0.5);
+  padding: 10px;
+  color: #4F4F4F;
+  border-radius: 8px;
 }
 .icon_right{
   color: white;
-  font-size: 100px;
   position: absolute;
   min-width: 40px;
   min-height: 40px;
-  right: 0px;
+  right: -5px;
   bottom: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background: rgba(224, 224, 224, 0.5);
+  padding: 10px;
+  color: #4F4F4F;
+  border-radius: 8px;
 }
 .icon_right_still{
    color: white;
@@ -190,9 +207,7 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.item:hover .overlay {
-  opacity: 1;
-}
+
 
 .still_item_5{
   grid-area: item_5;
