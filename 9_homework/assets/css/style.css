@@ -1,0 +1,123 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+   
+  }
+  * {
+    margin: 0;
+    padding: 0;
+   }
+body{
+  font-size: 28px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.header-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-menu-padding{
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.header-menu-left{
+  display: flex;
+  column-gap: 55px;
+  
+}
+.header-menu-eng{
+  font-family: "Tourney";
+  font-size: 0.78em;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.header-menu-wand{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.header-menu-left p + p{
+  font-family: "Staatliches";
+  font-size: 0.78em;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: -3px;
+}
+.header-menu-right{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-block{
+  display: flex;
+  flex-direction: column;
+}
+.main-block-title{
+  display: flex;
+}
+.main-block-title h1{
+  font-family: "Francois One";
+  font-size: 1.28em;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.main-block-title h1 + span{
+  margin-left: 10px;
+  font-family: Farro;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-top: -8px;
+}
+.main-block-title-padding{
+  padding-bottom: 40px;
+}
+.main-block-text p{
+  font-family: "PT Sans";
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main-block-text-padding{
+  padding-bottom: 70px;
+}
+.main-block-text-underline{
+  text-decoration: underline;
+  text-decoration-skip-ink:none;
+}
+.main-block-text-cursive{
+  font-style: italic;
+  font-size: 0.92em;
+}
+.main-block-text-paragraph p{
+  padding-bottom: 1.43em;
+}
+.main-block-text-bold{
+  font-weight: bold;
+}
+i{
+  font-size: 18px;
+  vertical-align: middle;
+}
+.main-block-text-atribut{
+  background: #C0C0C0;
+}
+.main-block-text-pizza{
+ transform: rotate(290deg);
+ margin-top: -8px;
+  font-size: 0.82em;
+}
+.main-block-text-extra{
+  margin-left:-5px;
+}
+
