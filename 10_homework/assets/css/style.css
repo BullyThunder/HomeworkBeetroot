@@ -9,15 +9,35 @@
 body{
   font-size: 28px;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+main{
+  padding-top: 180px;
+}
 .container{
   max-width: 1200px;
   margin: 0px auto;
 }
-
+.main-block-visible{
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+}
 .header-menu{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.main-block-container{
+  margin: 0px auto;
 }
 .header-menu-padding{
   padding-top: 30px;
@@ -26,7 +46,39 @@ body{
 .header-menu-left{
   display: flex;
   column-gap: 55px;
-  
+}
+
+.main-block-content{
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+.main-block-section-left-sticky{
+  position: sticky;
+ height: 100%;
+     top: 0;
+}
+.main-block-section-left-list{
+  list-style: none;
+  font-family: "Francois One";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.main-block-section-left-hr{
+  color: #C9C9C9;
+  margin-top: 6px;
+}
+.main-block-section-left-item{
+  min-width: 369px;
+}
+.main-block-section-right{
+  z-index: 10;
 }
 .header-menu-eng{
   font-family: "Tourney";
@@ -60,8 +112,10 @@ body{
 .main-block-title{
   display: flex;
 }
-.main-block-section-left-list{
-  list-style: none;
+.main-hr{
+  min-height: 8px;
+  max-width: 100px;
+  background-color: black;
 }
 .main-block-title h1{
   font-family: "Francois One";
@@ -69,16 +123,17 @@ body{
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.04em;
-  vertical-align: text-top;
+  text-align: left;
 }
 .main-block-title h1 + span{
   margin-left: 10px;
   font-family: Farro;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.04em;
-  text-align: top;
+  text-align: left;
+  margin-top: -8px;
 }
 .main-block-title-padding{
   padding-bottom: 40px;
@@ -122,5 +177,8 @@ i{
 }
 .main-block-text-extra{
   margin-left:-5px;
+}
+.main-block-text-extra-paragrafh{
+  max-width: 780px;
 }
 

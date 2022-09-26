@@ -145,7 +145,11 @@ i{
     opacity: 1;
     background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
 }
-.icon_left:hover:after {
+.icon_left:hover{
+  opacity: 1;
+  background: white;
+}
+.icon_right:hover{
   opacity: 1;
   background: white;
 }

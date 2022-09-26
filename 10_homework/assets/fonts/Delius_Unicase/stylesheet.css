@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Delius Unicase';
+    src: url('DeliusUnicase-Regular.eot');
+    src: local('Delius Unicase'), local('DeliusUnicase-Regular'),
+        url('DeliusUnicase-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DeliusUnicase-Regular.woff2') format('woff2'),
+        url('DeliusUnicase-Regular.woff') format('woff'),
+        url('DeliusUnicase-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Delius Unicase';
+    src: url('DeliusUnicase-Bold.eot');
+    src: local('Delius Unicase Bold'), local('DeliusUnicase-Bold'),
+        url('DeliusUnicase-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DeliusUnicase-Bold.woff2') format('woff2'),
+        url('DeliusUnicase-Bold.woff') format('woff'),
+        url('DeliusUnicase-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
