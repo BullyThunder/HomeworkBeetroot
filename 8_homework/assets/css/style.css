@@ -11,6 +11,9 @@
   max-width: 1167px;
   margin: 0px auto;
 }
+header{
+  border-bottom: 1px solid #BDBDBD;
+}
 .header-menu{
   display: flex;
   flex-direction: row;
@@ -43,16 +46,17 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.header-menu-list-item{
+.header-menu-list__item{
   padding-right: 30px;
+  color: #3C3C3C;
 }
 .header-menu-list-item:last-child{
   padding-right: 0px;
 }
-.header-nav-padding-top{
+.header-nav-padding__top{
   padding-top: 28px;
 }
-.header-menu-left-padding{
+.header-menu-left__padding{
   padding-top: 6px;
 }
 .header-image-padding{
@@ -68,8 +72,8 @@
 .header-menu-padding{
   padding-bottom: 11px;
 }
-.header-menu-button-style{
-  border: 2px solid black;
+.header-menu-button__style{
+  border: 1px solid #3C3C3C;
   display: flex;
   justify-content: center;
   padding: 9px 15px;
@@ -80,12 +84,13 @@
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
+  color: #3C3C3C;
 }
-.header-menu-list-item:hover{
+.header-menu-list__item:hover{
   color: #18B5DC;
   cursor: pointer;
 }
-.header-menu-button-style:hover{
+.header-menu-button__style:hover{
   cursor: pointer;
   color: white;
   background-color: #18B5DC;
@@ -95,14 +100,16 @@
   background-color: #F6F6F6;
 }
 .main-fonts{
-   font-family: Lato;
+   font-family: "Lato";
 }
-.main-title{
+.main-title h1{
+  font-family: "Lato";
   font-size: 34px;
   font-weight: 700;
   line-height: 41px;
   letter-spacing: 0.13em;
   text-align: center;
+  color: #3C3C3C;
 }
 .main-title-padding{
  padding-top: 150px;
@@ -127,6 +134,7 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
+  color: #3C3C3C;
 }
 .main-design-block{
   display: flex;
@@ -145,13 +153,13 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.main-design-block-text-bottom{
+.main-design-block-text__bottom{
   font-weight: 300;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
-.main-design-block-image{
+.main-design-block__image{
   min-width: 270px;
   min-width: 270px;
   margin-bottom: 20px;
@@ -179,7 +187,7 @@
   background: #5DCBE6;
   color: white;
 }
-.main-menu-icon-facebook{
+.main-menu-icon__facebook{
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 18px;
@@ -190,10 +198,10 @@
 }
 
 
-.main-design-block-article{
+.main-design-block__article{
   position: relative;
 }
-.main-design-block-article:hover .overlay{
+.main-design-block__article:hover .overlay{
   opacity: 1;
   transition: 0.5s;
   cursor: pointer;
@@ -203,7 +211,7 @@
    color: #18B5DC;
     transition: 0.5s;
 }
- .main-menu-icon-facebook:hover{
+ .main-menu-icon__facebook:hover{
   background: white;
    color: #18B5DC;
     transition: 0.5s;
@@ -221,7 +229,7 @@
   justify-content: center;
   display: flex;
 }
-.footer-menu-top-padding{
+.footer-menu-top__padding{
   padding-top: 40px;
   padding-bottom: 26px;
 }
@@ -249,16 +257,14 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.footer-menu-list-item{
+.footer-menu-list__item{
   padding-right: 30px;
+  color: #3C3C3C;
 }
-.footer-menu-list-item:last-child{
+.footer-menu-list__item:last-child{
   padding-right: 0px;
 }
-.footer-nav-padding-top{
-  padding-top: 28px;
-}
-.footer-menu-list-item:hover{
+.footer-menu-list__item:hover{
   color: #18B5DC;
   cursor: pointer;
 }
@@ -273,24 +279,24 @@
 }
 .footer-menu-icon{
   background: white;
-  border: 2px solid #18B5DC;
+  border: 1px solid #18B5DC;
   color: #18B5DC;
   padding: 15px;
 }
 i{
- font-size: 24px;
+ font-size: 20px;
 }
 .footer-menu-icon:hover{
   background: #18B5DC;
   color: white;
 }
-.footer-menu-icon-facebook{
+.footer-menu-icon__facebook{
   background: white;
-  border: 2px solid #18B5DC;
+  border: 1px solid #18B5DC;
   color: #18B5DC;
  padding: 15px 19px;
 }
-.footer-menu-icon-facebook:hover{
+.footer-menu-icon__facebook:hover{
   background: #18B5DC;
   color: white;
 }
