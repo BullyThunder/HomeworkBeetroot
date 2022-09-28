@@ -18,6 +18,9 @@ header{
   width: 100%;
   left: 0;
   top: 0;
+  background-color: #fff;
+  z-index: 11;
+  padding: 13px 0;
 }
 main{
   padding-top: 180px;
@@ -26,7 +29,7 @@ main{
   max-width: 1200px;
   margin: 0px auto;
 }
-.main-block-visible{
+.main-block__visible{
   position: fixed;
   z-index: 1;
   right: 0px;
@@ -40,25 +43,27 @@ main{
   margin: 0px auto;
 }
 .header-menu-padding{
-  padding-top: 30px;
-  padding-bottom: 100px;
+ 
 }
-.header-menu-left{
+.header-menu__left{
   display: flex;
   column-gap: 55px;
+  padding-top: 13px;
 }
-
+main{
+  padding-top: 150px;
+}
 .main-block-content{
   display: flex;
   flex-direction: row;
   column-gap: 40px;
 }
-.main-block-section-left-sticky{
+.main-block-section__left__sticky{
   position: sticky;
  height: 100%;
      top: 0;
 }
-.main-block-section-left-list{
+.main-block-section__left-list{
   list-style: none;
   font-family: "Francois One";
   font-size: 36px;
@@ -69,18 +74,19 @@ main{
   display: flex;
   flex-direction: column;
   row-gap: 80px;
+  padding-top: 10px;
 }
-.main-block-section-left-hr{
+.main-block-section__left-hr{
   color: #C9C9C9;
   margin-top: 6px;
 }
-.main-block-section-left-item{
+.main-block-section__left-item{
   min-width: 369px;
 }
-.main-block-section-right{
+.main-block-section__right{
   z-index: 10;
 }
-.header-menu-eng{
+.header-menu__eng{
   font-family: "Tourney";
   font-size: 0.78em;
   font-weight: 600;
@@ -88,11 +94,11 @@ main{
   letter-spacing: 0.06em;
   text-align: center;
 }
-.header-menu-wand{
+.header-menu__wand{
   padding-left: 5px;
   padding-right: 5px;
 }
-.header-menu-left p + p{
+.header-menu__left p + p{
   font-family: "Staatliches";
   font-size: 0.78em;
   font-weight: 400;
@@ -108,11 +114,13 @@ main{
 .main-block{
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 80px;
 }
 .main-block-title{
   display: flex;
 }
 .main-hr{
+  margin-bottom: 20px;
   min-height: 8px;
   max-width: 100px;
   background-color: black;
@@ -135,7 +143,7 @@ main{
   text-align: left;
   margin-top: -8px;
 }
-.main-block-title-padding{
+.main-block-title__padding{
   padding-bottom: 40px;
 }
 .main-block-text p{
@@ -146,36 +154,36 @@ main{
   letter-spacing: 0em;
   text-align: left;
 }
-.main-block-text-padding{
-  padding-bottom: 70px;
+.main-block__padding{
+  padding-top: 70px;
 }
-.main-block-text-underline{
+.main-block-text__underline{
   text-decoration: underline;
   text-decoration-skip-ink:none;
 }
-.main-block-text-cursive{
+.main-block-text__cursive{
   font-style: italic;
   font-size: 0.92em;
 }
-.main-block-text-paragraph p{
+.main-block-text__paragraph p{
   padding-bottom: 1.43em;
 }
-.main-block-text-bold{
+.main-block-text__bold{
   font-weight: 700;
 }
 i{
   font-size: 18px;
   vertical-align: middle;
 }
-.main-block-text-atribut{
+.main-block-text__atribut{
   background: #C0C0C0;
 }
-.main-block-text-pizza{
+.main-block-text__pizza{
  transform: rotate(290deg);
  margin-top: -8px;
   font-size: 0.82em;
 }
-.main-block-text-extra{
+.main-block-text__extra{
   margin-left:-5px;
 }
 .main-block-text-extra-paragrafh{
