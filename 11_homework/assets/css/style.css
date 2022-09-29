@@ -11,7 +11,7 @@ body{
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #3DB370;
 }
 header{
   border-bottom: 1px solid #EFEEF3;
@@ -48,7 +48,6 @@ header{
   color: #7690A8;
   padding-top: 100px;
 }
-
 .main-content__text__padding{
   padding-bottom: 15px;
 }
@@ -66,25 +65,194 @@ header{
 .main-content__middle{
   display: flex;
   flex-direction: row;
+  column-gap: 30px;
 }
+.main-content__top_text__bottom_extra{
+  max-width: 235px;
+}
+.main-content__top_text{
+  font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #16133D;
+}
+.main-content__top__text__padding{
+  padding-top: 30px;
+  padding-left: 40px;
+}
+.main-content__top_text__bottom{
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #16133D;
+  display: flex;
+}
+.main-content__top_text__bottom span{
+  max-width: 230px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #16133D;
+}
+.main-content__top_text__padding_top{
+  padding-top: 15px;
+}
+.main-content__top_text__bottom__padding{
+  
+  padding-left: 40px;
+}
+.footer-image__icon{
+  fill: #0D0D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-image__icon_1:hover .footer-image__icon{
+  fill: #3DB370;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-image__icon_1:hover{
+  cursor: pointer;
+}
+:root{
+  --green: #D1E7FF;
+  --green_1: #E8F3FF;
+  --red: #B9DCFF;
+  --dd: #007FFC;
+  --white: #FFFFFF;
+}
+.main-content__icon_1{
+  fill: var(--green);
+}
+.main-content__icon_2{
+  fill: var(--green_1);
+}
+.main-content__icon_3{
+  fill: var(--red);
+}
+.main-content__icon_3:hover{
+  fill: #52C29D;
+}
+.main-content__icon_4{
+  fill: var(--dd);
+}
+.main-content__icon_5{
+  fill: var(--#FFFFFF);
+}
+.main-icon:hover .main-content__icon_4{
+  fill: #52C29D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main-icon:hover .main-content__icon_1{
+  fill: #CAEFF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main-icon:hover .main-content__icon_3{
+  fill: #CAEFF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
 .main-content__middle_block{
   display: flex;
   flex-direction: column;
-  border: 1px solid #E5EAF4;
-  border-radius: 8px;
-  padding-top: 41px;
+  max-width: 64px;
   padding-left: 40px;
-  padding-right: 266px;
+  padding-top: 41px;
 }
-.main-content__image_design_1{
-  width: 64px;
-  height: 66px;
-  stroke: #007FFC;
-  stroke-width: 1px;
-
+.main-content_icon_1{
+  border-radius: 8px;
 }
 .main-content__image_design_1:hover{
   fill: #52C29D;
   stroke: #52C29D;
   stroke-width: 1px;
+  cursor: pointer;
+}
+.main-content__top_text__extra{
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3DB370;
+}
+.main-content__top_text__extra__padding{
+  padding-top: 30px;
+  padding-bottom: 41px;
+  padding-left: 40px;
+}
+.main-content__image_design_1{
+  width: 64px;
+  height: 66px;
+  stroke: #007FFC;
+}
+.main-content__middle__item{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E5EAF4;
+  min-width: 370px;
+}
+footer{
+  background-color: #16133D;
+}
+.footer-content{
+  display: flex;
+}
+.footer-content__padding{
+  padding-top: 25px;
+}
+.footer-content__text{
+  display: flex;
+  vertical-align: middle;
+  font-family: "Quicksand";
+  color: #FFFFFF;
+  font-size: 2.19em;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 13px;
+}
+.main-content__middle__padding{
+  padding-bottom: 100px;
+}
+.footer-social-link{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.footer-social-link__padding{
+  padding-top: 43px;
+  padding-bottom: 40px;
+}
+.footer-social__icon:hover{
+  fill: #3DB370;
+  stroke: ;
+  cursor: pointer;
 }
