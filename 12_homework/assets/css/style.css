@@ -1,0 +1,33 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+   
+  }
+  * {
+    margin: 0;
+    padding: 0;
+   }
+body{
+  font-size: 28px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+i{
+  font-size: 70px;
+  color: bla.k;
+}
+main{
+}
+.container{
+  max-width: 1300px;
+}
+.cards-block{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.cards-block__rotate:hover {
+  transition: .8s;
+  transform: scale(-1,1);
+}

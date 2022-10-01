@@ -104,7 +104,7 @@ header{
   color: #16133D;
 }
 .main-content__top_text__padding_top{
-  padding-top: 15px;
+   padding-top: 15px;
 }
 .main-content__top_text__bottom__padding{
   
@@ -134,6 +134,7 @@ header{
   --red: #B9DCFF;
   --dd: #007FFC;
   --white: #FFFFFF;
+  --o_green: #1565D8;
 }
 .main-content__icon_1{
   fill: var(--green);
@@ -151,30 +152,39 @@ header{
   fill: var(--dd);
 }
 .main-content__icon_5{
-  fill: var(--#FFFFFF);
+  fill: var(--white);
 }
-.main-icon:hover .main-content__icon_4{
+.main-content__icon_6{
+  stroke: var(--o_green);
+}
+.main-content__middle__item:hover .main-content__icon_4{
   fill: #52C29D;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.main-icon:hover .main-content__icon_1{
+.main-content__middle__item:hover .main-content__icon_1{
   fill: #CAEFF2;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.main-icon:hover .main-content__icon_3{
+.main-content__middle__item:hover .main-content__icon_3{
   fill: #CAEFF2;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-
+.main-content__middle__item:hover .main-content__icon_6{
+  stroke: #3DB370;
+  opacity: 1;
+}
+.main-content__middle__item:hover{
+  cursor: pointer;
+}
 
 
 .main-content__middle_block{
