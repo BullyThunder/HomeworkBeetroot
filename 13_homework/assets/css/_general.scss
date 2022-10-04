@@ -1,10 +1,33 @@
 body{
     font-size: 14px;
 }
+
 .container{
     max-width: 1170px;
     margin: 0px auto;
 }
+.fa-brands-style{
+  padding:10px;
+  color:#CCCCCC;
+}
+.fa-brands-style-google{
+  padding-left: 5px;
+  padding-right: 2px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  color:#CCCCCC;
+}
+.fa-facebook-f{
+  border-radius: 5px;
+  padding: 9px 12px 9px 12px;
+}
+.fa-plus{
+  font-size: 10px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  color:#CCCCCC;
+}
+.fa-brands-style
 *, *::before, *::after{
 	box-sizing: border-box;
    

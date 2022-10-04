@@ -4,3 +4,15 @@
 @mixin font-grey{
     color: $grey;
 }
+@mixin font-Roboto{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 900;
+    letter-spacing: 0em;
+    text-align: center;
+}
+@mixin font-Raleway{
+    font-family: "Raleway" ,sans-serif;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
