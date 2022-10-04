@@ -1,0 +1,27 @@
+.main{
+    &__padding{
+        padding-top: 41px;
+    }
+    &__image{
+        display: flex;
+        justify-content: center;
+    }
+    &__image-style{
+        max-width: 20px;
+        max-height: 20px;
+    }
+    &__container{
+        @extend .container;
+    }
+    &__left-padding{
+        
+    }
+    &__image-border{
+        padding-left: 85px;
+        padding-top: 130px;
+        padding-right: 100px;
+        padding-bottom: 80px;
+        border-top: 1px solid #FFCC00;
+        border-right: 1px solid #FFCC00;
+    }
+}

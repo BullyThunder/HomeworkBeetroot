@@ -1,0 +1,31 @@
+.header{
+    color:black;
+    &__padding{
+     padding-top: 121px;
+    }
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+    }
+    &__title-text{
+        font-family: "Roboto" ,sans-serif;
+        font-size: 4.28em;
+        font-weight: 900;
+        line-height: 66px;
+        letter-spacing: 0em;
+        text-align: center;
+        @include font-gold;
+    }
+    &__title-text-little{
+        font-family: "Roboto" ,sans-serif;
+        font-size: 1.71em;
+        font-weight: 900;
+        line-height: 66px;
+        letter-spacing: 0em;
+        text-align: center;
+        @include font-grey;
+    }
+}
