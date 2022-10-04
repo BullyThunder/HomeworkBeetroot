@@ -10,6 +10,10 @@
         max-width: 20px;
         max-height: 20px;
     }
+    &__block{
+        display: flex;
+        flex-direction: row;
+    }
     &__container{
         @extend .container;
     }
