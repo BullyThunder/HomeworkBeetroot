@@ -1,10 +1,12 @@
 .main{
     &__padding{
         padding-top: 41px;
+        padding-bottom: 122px;
     }
     &__image{
         display: flex;
         justify-content: center;
+        padding-bottom: 41px;
     }
     &__image-style{
         max-width: 20px;
@@ -18,17 +20,14 @@
         @extend .container;
     }
     &__image-border{
-        padding-left: 85px;
-        padding-top: 130px;
-        padding-right: 100px;
-        padding-bottom: 80px;
-        border-top: 1px solid #FFCC00;
-        border-right: 1px solid #FFCC00;
+
     }
     &__title-padding{
-        padding-top: 120px;
+        padding: 41px 70px 0 85px;
     }
     &__title-caption{
+        display: flex;
+        justify-content: center;
         @include font-Roboto;
         font-size: 2.57em;
         line-height: 42px;
@@ -36,6 +35,20 @@
     }
     &__title-caption-padding{
         padding-bottom: 30px;
+    }
+    &__left-padding{
+        padding-top: 41px;
+        padding-left: 85px;
+        padding-bottom: 80px;
+    }
+    &__icon{
+        display: flex;
+        border: 2px solid #CCCCCC;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
     }
     &__line{
         width: 100px;
@@ -50,6 +63,8 @@
         justify-content: center;
 }
     &__title-extra{
+        display: flex;
+        justify-content: center;
         @include font-Raleway;
         font-size: 1.71em;
         font-weight: 400;
@@ -66,16 +81,21 @@
         justify-content: center;
         column-gap:5px;
     }
-    &__ul-list{
-        border:2px solid #CCCCCC;
-        border-radius: 20px;
-        width: 30px;
-        height: 30px;
-    }
-    &__ul-list-facebook{
-        border:2px solid #CCCCCC;
-        border-radius: 40px;
-    }
+   &__image-hr{
+    border: 0;
+    height: 0.5px;
+    width: 210px;
+    background-color: $gold;
+    
+   }
+   &__image-hr-block{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: flex-end;
+    position: relative;
+    top:10px;
+   }
     &__ul-padding{
         padding-bottom: 49px;
     }
@@ -84,8 +104,82 @@
         font-size: 1em;
         font-weight: 500;
         line-height: 24px;
+        text-align: center;
    }    
    &__text-padding{
-        padding-left: 85px;
+        padding-bottom: 20px;
    }
+   &__left{
+    width: 50%;
+    border-right: 1px solid $gold;
+   }
+   &__left-top{
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid $gold;
+    border-left: 1px solid $gold;
+    display: flex;
+    position: absolute;
+}
+&__left__right-top{
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid $gold;
+    border-right: 1px solid $gold;
+    position: absolute;
+}
+&__left-bottom{
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid $gold;
+    border-right: 1px solid $gold;
+    position: absolute;
+}
+&__image-block{
+    margin: 10px;
+    position: relative;
+}
+   &__right{
+    width: 50%;
+   }
+   &__flex{
+    display: flex;
+    flex-direction: row;
+   }
+   &__hr-block{
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+   }
+   &__hr-block_2{
+    width: 20px;
+    height: 4px;
+    border: 0;
+    background-color: $gold;
+   }
+   &__hr-block_1{
+    width: 10px;
+    height: 4px;
+    border: 0;
+    background-color: $gold;
+   }
+  &__hr-block-padding{
+    padding-bottom: 30px;
+  }
+  &__button-style{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid $gold;
+  }
+  &__button-text{
+    font-family: Open Sans;
+    font-size: 1em;
+    @include font-Open_sans;
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+  }
+
+
 }
