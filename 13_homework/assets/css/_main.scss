@@ -20,7 +20,8 @@
         @extend .container;
     }
     &__image-border{
-
+        position: relative;
+        display: inline-block;
     }
     &__title-padding{
         padding: 41px 70px 0 85px;
@@ -118,8 +119,10 @@
     height: 100px;
     border-top: 1px solid $gold;
     border-left: 1px solid $gold;
-    display: flex;
     position: absolute;
+    top:0px;
+    left:0px;
+
 }
 &__left__right-top{
     width: 100px;
@@ -127,17 +130,31 @@
     border-top: 1px solid $gold;
     border-right: 1px solid $gold;
     position: absolute;
+    top:0px;
+    right:0px;
 }
 &__left-bottom{
     width: 100px;
     height: 100px;
     border-bottom: 1px solid $gold;
+    border-left: 1px solid $gold;
+    position: absolute;
+    bottom:4px;
+    left:0px;
+}
+&__right-bottom{
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid $gold;
     border-right: 1px solid $gold;
     position: absolute;
+    bottom:4px;
+    right:0px;
+
 }
 &__image-block{
-    margin: 10px;
-    position: relative;
+    margin: 15px;
+    
 }
    &__right{
     width: 50%;
