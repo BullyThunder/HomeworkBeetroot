@@ -1,0 +1,23 @@
+@mixin font-gold{
+    color: $gold;
+}
+@mixin font-grey{
+    color: $grey;
+}
+@mixin font-Roboto{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 900;
+    letter-spacing: 0em;
+   
+}
+@mixin font-Raleway{
+    font-family: "Raleway" ,sans-serif;
+    letter-spacing: 0em;
+}
+@mixin font-Open_sans{
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#666666;
+}

@@ -1,0 +1,27 @@
+body {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.fa-icon-twitter {
+  padding: 7px 9.57px 7px 10px;
+}
+
+.fa-plus {
+  padding-left: 2px;
+  padding-top: 5px;
+  font-size: 7px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
