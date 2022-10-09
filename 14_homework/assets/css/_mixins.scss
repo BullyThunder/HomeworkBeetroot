@@ -46,6 +46,14 @@
      letter-spacing: 0.1em;
     text-align: left;
 }
+@mixin font-Red-Hat-Display-24-extra{
+    font-family: "Red Hat Display" ,sans-serif;
+    font-size: 1.71em;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
 @mixin font-Red-Hat-Display-28{
     font-family: "Red Hat Display",sans-serif;
     font-size: 2em;

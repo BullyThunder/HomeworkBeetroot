@@ -1,0 +1,40 @@
+.load{
+    &__container{
+        @extend .container;
+    }
+    &__padding{
+        padding-top: 54px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        &-style{
+        background-color: #565656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 180px;
+        min-height: 46px;
+        color:#FFFFFF;
+        font-family: "Lato";
+        font-size: 1.14em;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        border:transparent;
+        }
+        &-style:hover{
+            background-color: #323232;
+            cursor: pointer;
+        }
+        &-padding{
+            padding-bottom: 90px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

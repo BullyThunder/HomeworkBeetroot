@@ -1,20 +1,38 @@
-.posts{
+.popular{
+    &__padding{
+        padding-top: 112px;
+    }
     &__container{
         @extend .container;
-    }
-    &__padding{
-        padding-top: 90px;
     }
     &__caption{
         display: flex;
         justify-content: space-between;
         &-padding{
-            padding-bottom: 50px;
+            padding-bottom: 46px;
         }
+        &-block{
+            max-width: 570px;
+            &-text{
+                @include font-Red-Hat-Display-24-extra; 
+            }
+            &-bottom{
+            font-family: "Lato";
+            font-size: 1.14em;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            max-width: 540px;
+            }
+        }
+
+        
+
     }
     &__title{
         @include font-Red-Hat-Display-28;
-        &__title-position{
+        &-position{
             display: flex;
         }
     }
@@ -29,9 +47,6 @@
         &-icon{
             margin-left: 20px;
         }
-        &-icon:hover{
-            color:#000000;
-        }
     }
     &__right:hover{
         color:#000000;
@@ -41,42 +56,25 @@
         display: flex;
         flex-direction: row;
         column-gap: 30px;
-        &-left{
-            display: flex;
-            flex-direction: column;
-        }
-        &-caption{
-            @include font-Red-Hat-Display-22;
-            &-padding{
-                padding-bottom: 20px;
-            }
-        }
-        &-caption-padding{
-            padding-bottom: 20px;
-        }
-        &-center{
-            display: flex;
-            flex-direction: column;
-        }
         &-right{
             display: flex;
+            width: 50%;
             flex-direction: column;
+            row-gap: 20px;
+        }
+        &-left{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            row-gap: 20px;
         }
         &-text{
             @include font-Lato-12;
         }
-        &-text-extra{
-            @include font-Lato-16;
-            min-width: 300px;
-        }
         &-bottom{
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            &-padding{
-                padding-top: 25px;
-                padding-bottom: 26px;
-            } 
         }
     }
+
 }
