@@ -1,0 +1,89 @@
+.footer{
+    background-color: #F4F4F4;
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__content-caption{
+        @include font-Red-Hat-Display-48;
+        &-padding{
+        padding-top: 70px;
+        }
+    }
+    &__navigation{
+        display: flex;
+        
+        &-list{
+            display: flex;
+            list-style: none;
+            column-gap: 23px;
+        }
+        &-item{
+            border: 1px solid #565656;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50px;
+            min-height: 50px;
+        }
+
+    }
+    &__navigation-item:hover{
+        cursor: pointer;
+        background-color: #565656;
+    }
+    &__navigation-item:hover &__icon-style{
+            fill: #FFFFFF;
+        }
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-text{
+            display: flex;
+            align-items: flex-end;
+            &-span{
+            font-family: "Lato";
+            font-size: 1.14em;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.1em;
+            text-align: left;
+
+            }
+        }
+    }
+    &__bottom{
+        &-text{
+            font-family: "Lato";
+            font-size: 1.14em;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.1em;
+            text-align: left;
+        }
+        &-padding{
+            padding-top: 15px;
+        }
+    }
+    &__extra{
+        display: flex;
+        justify-content: center;
+        &-padding{
+            padding-top: 26px;
+            padding-bottom: 30px;
+        }
+        &-text{
+        font-family: "Lato";
+        font-size: 0.86em;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #000000;
+        }
+    }
+}

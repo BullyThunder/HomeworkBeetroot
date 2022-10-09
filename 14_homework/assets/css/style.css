@@ -2,7 +2,7 @@ body {
   font-size: 14px;
 }
 
-.container, .load__container, .popular__container, .posts__container, .design__container, .blog__container, .manifest__container, .header__container {
+.container, .footer__container, .load__container, .popular__container, .posts__container, .design__container, .blog__container, .manifest__container, .header__container {
   max-width: 1170px;
   margin: 0px auto;
   width: 90%;
@@ -40,6 +40,15 @@ p {
 h {
   margin: 0px;
   padding: 0px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header__logo-padding {
@@ -434,4 +443,117 @@ h {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.load__content-left {
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display";
+  font-size: 1.64em;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.load__content-right {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato";
+  font-size: 1.35em;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.load__content-right-bottom {
+  padding-top: 50px;
+}
+.load__content-padding {
+  padding-bottom: 90px;
+}
+
+.footer {
+  background-color: #F4F4F4;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-caption {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 3.42em;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.footer__content-caption-padding {
+  padding-top: 70px;
+}
+.footer__navigation {
+  display: flex;
+}
+.footer__navigation-list {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
+}
+.footer__navigation-item {
+  border: 1px solid #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  min-height: 50px;
+}
+.footer__navigation-item:hover {
+  cursor: pointer;
+  background-color: #565656;
+}
+.footer__navigation-item:hover .footer__icon-style {
+  fill: #FFFFFF;
+}
+.footer__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__block-text {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__block-text-span {
+  font-family: "Lato";
+  font-size: 1.14em;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.footer__bottom-text {
+  font-family: "Lato";
+  font-size: 1.14em;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.footer__bottom-padding {
+  padding-top: 15px;
+}
+.footer__extra {
+  display: flex;
+  justify-content: center;
+}
+.footer__extra-padding {
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+.footer__extra-text {
+  font-family: "Lato";
+  font-size: 0.86em;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
