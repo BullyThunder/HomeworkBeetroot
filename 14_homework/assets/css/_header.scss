@@ -1,0 +1,43 @@
+.header {
+    &__container{
+        @extend .container;
+    }
+    &__logo-padding{
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right-content{
+        display: flex;
+        column-gap: 84px;
+    }
+    &__menu-item:hover:after{
+    content: '';
+    display: block;
+    height: 1px;
+    margin-left:8px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background: #000000;
+    }
+    &__menu-padding{
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    &__menu-item{
+        @include font-Lato-14;
+        color: $black;
+    }
+    &__menu-list{
+        display: flex;
+        list-style: none;
+        column-gap: 42px;
+    }
+   
+}
+.header__search{
+    padding-top: 42px;
+}

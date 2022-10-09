@@ -1,0 +1,18 @@
+.blog{
+    & h1{
+        @include font-Red-Hat-Display-48;
+        font-weight: 600;
+            
+    }
+    &__padding{
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    &__container{
+        @extend .container;
+    }
+    &__Tech{
+        padding-top: 85px;
+        
+    }
+}

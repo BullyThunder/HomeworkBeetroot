@@ -1,0 +1,71 @@
+.design{
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    &__reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 32px;
+    }
+    &__text-reverse-padding{
+        padding-left: 120px;
+    }
+    &__image{
+        display: flex;
+        width: 50%;
+    }
+    &__text{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__little-text{
+        @include font-Lato-16;
+        display: flex;
+    }
+    &__little-text-padding{
+        padding-top: 85px;
+        padding-bottom: 30px;
+    }
+    &__caption{
+        @include font-Red-Hat-Display-24;
+        max-width: 369px;
+    }
+    &__caption-padding{
+        padding-bottom: 15px;
+    }
+    &__little-text-padding-top{
+        padding-top: 50px;
+    }
+    &__little-text{
+        display: inline;
+    }
+    &__arrows:hover::before{
+        cursor: pointer;
+        content: 'Read more';
+    }
+    &__text-position{
+        display: inline-block;
+        padding-right: 32px;
+    }
+    &__text-position{
+        display: inline-block;
+        min-width: 448px;
+    }
+    &__text-position-reverse p{
+        min-width: 500px;
+    }
+
+
+}
