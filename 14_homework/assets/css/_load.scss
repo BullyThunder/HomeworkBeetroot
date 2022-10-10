@@ -1,6 +1,9 @@
 .load{
     &__container{
         @extend .container;
+        @media screen and (max-width: $container-resolution){
+            overflow: hidden;
+          }
     }
     &__padding{
         padding-top: 54px;

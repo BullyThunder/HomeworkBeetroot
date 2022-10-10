@@ -44,6 +44,12 @@
         &-left{
             display: flex;
             flex-direction: column;
+            & img{
+            @media screen and (max-width: $container-resolution){
+                max-width: 340px;
+                max-height: 240px;
+            }
+        }
         }
         &-caption{
             @include font-Red-Hat-Display-22;
@@ -57,11 +63,23 @@
         &-center{
             display: flex;
             flex-direction: column;
+            & img{
+                @media screen and (max-width: $container-resolution){
+                    max-width: 340px;
+                    max-height: 240px;
+                }
         }
+    }
         &-right{
             display: flex;
             flex-direction: column;
+            & img{
+                @media screen and (max-width: $container-resolution){
+                    max-width: 100%
+                    max-height: 100%
+                }
         }
+    }
         &-text{
             @include font-Lato-12;
         }

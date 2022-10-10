@@ -7,6 +7,11 @@ body {
   margin: 0px auto;
   width: 90%;
 }
+@media screen and (max-width: 1230px) {
+  .container, .footer__container, .load__container, .popular__container, .posts__container, .design__container, .blog__container, .manifest__container, .header__container {
+    overflow: hidden;
+  }
+}
 
 .fa-icon-twitter {
   padding: 7px 9.57px 7px 10px;
@@ -51,6 +56,11 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1230px) {
+  .header__container {
+    overflow: hidden;
+  }
+}
 .header__logo-padding {
   padding-top: 44px;
   padding-bottom: 44px;
@@ -101,6 +111,12 @@ a {
   background-image: url("../img/section_bg-image.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  height: 600px;
+}
+@media screen and (max-width: 1230px) {
+  .manifest__container {
+    overflow: hidden;
+  }
 }
 .manifest__title-padding {
   padding-top: 100px;
@@ -153,12 +169,16 @@ a {
 .design__image {
   display: flex;
   width: 50%;
+  max-width: 50%;
+}
+.design__image img {
+  max-width: 100%;
 }
 .design__text {
   display: flex;
   width: 50%;
   flex-direction: column;
-  flex-wrap: wrap;
+  max-width: 50%;
 }
 .design__little-text {
   font-family: "Lato", sans-serif;
@@ -196,11 +216,11 @@ a {
   content: "Read more";
 }
 .design__text-position {
-  display: inline-block;
+  display: inline-flex;
   padding-right: 32px;
 }
 .design__text-position {
-  display: inline-block;
+  display: inline-flex;
   min-width: 448px;
 }
 .design__text-position-reverse p {
@@ -263,6 +283,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1230px) {
+  .posts__content-left img {
+    max-width: 340px;
+    max-height: 240px;
+  }
+}
 .posts__content-caption {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.57em;
@@ -282,9 +308,21 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1230px) {
+  .posts__content-center img {
+    max-width: 340px;
+    max-height: 240px;
+  }
+}
 .posts__content-right {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1230px) {
+  .posts__content-right img {
+    max-width: 340px;
+    max-height: 240px;
+  }
 }
 .posts__content-text {
   font-family: "Lato", sans-serif;
@@ -316,6 +354,11 @@ a {
 
 .popular__padding {
   padding-top: 112px;
+}
+@media screen and (max-width: 1230px) {
+  .popular__container {
+    overflow: hidden;
+  }
 }
 .popular__caption {
   display: flex;
@@ -409,6 +452,11 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1230px) {
+  .load__container {
+    overflow: hidden;
+  }
+}
 .load__padding {
   padding-top: 54px;
 }
@@ -473,6 +521,11 @@ a {
 
 .footer {
   background-color: #F4F4F4;
+}
+@media screen and (max-width: 1230px) {
+  .footer__container {
+    overflow: hidden;
+  }
 }
 .footer__content {
   display: flex;

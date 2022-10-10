@@ -5,7 +5,12 @@ body{
     max-width: 1170px;
     margin: 0px auto;
     width: 90%;
-}
+    @media screen and (max-width: $container-resolution){
+      overflow: hidden;
+    }
+      
+    }
+
 .fa-icon-twitter{
   padding: 7px 9.57px 7px 10px;
 }

@@ -6,6 +6,9 @@
         display: flex;
         flex-direction: row;
         column-gap: 30px;
+        @media screen and (max-width: $container-resolution){
+            
+          }
     }
     &__wrapper{
         display: flex;
@@ -23,12 +26,16 @@
     &__image{
         display: flex;
         width: 50%;
+        max-width: 50%;
+        & img{
+            max-width: 100%;
+        }
     }
     &__text{
         display: flex;
         width: 50%;
         flex-direction: column;
-        flex-wrap: wrap;
+        max-width: 50%;
     }
     &__little-text{
         @include font-Lato-16;
@@ -56,11 +63,11 @@
         content: 'Read more';
     }
     &__text-position{
-        display: inline-block;
+        display: inline-flex;
         padding-right: 32px;
     }
     &__text-position{
-        display: inline-block;
+        display: inline-flex;
         min-width: 448px;
     }
     &__text-position-reverse p{
