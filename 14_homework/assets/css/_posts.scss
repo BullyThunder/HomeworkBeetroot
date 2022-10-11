@@ -1,6 +1,9 @@
 .posts{
     &__container{
         @extend .container;
+        @media screen and (max-width: $container-resolution){
+            overflow: hidden;
+        }
     }
     &__padding{
         padding-top: 90px;
@@ -45,9 +48,11 @@
             display: flex;
             flex-direction: column;
             & img{
+                max-width: 370px;
+                max-height: 260px;
             @media screen and (max-width: $container-resolution){
-                max-width: 340px;
-                max-height: 240px;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
         }
@@ -64,22 +69,26 @@
             display: flex;
             flex-direction: column;
             & img{
-                @media screen and (max-width: $container-resolution){
-                    max-width: 340px;
-                    max-height: 240px;
-                }
+                max-width: 370px;
+                max-height: 260px;
+            @media screen and (max-width: $container-resolution){
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
-    }
+}
         &-right{
             display: flex;
             flex-direction: column;
             & img{
-                @media screen and (max-width: $container-resolution){
-                    max-width: 100%
-                    max-height: 100%
-                }
+                max-width: 370px;
+                max-height: 260px;
+            @media screen and (max-width: $container-resolution){
+                
+                max-height: 100%;
+            }
         }
-    }
+}
         &-text{
             @include font-Lato-12;
         }
@@ -97,4 +106,4 @@
             } 
         }
     }
-}
+}       

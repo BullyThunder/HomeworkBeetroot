@@ -4,23 +4,57 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 600px;
+        @media screen and (max-width: $tablet-resolution){
+            width: 100%;
+            height:53%;
+            
+            height: 320px;
+          }
+          @media screen and (max-width: $mobile-resulution){
+            background-image: url('../img/section_bg-image-mobile.png');
+            height: 500px;
+          }
     }
     &__container{
         @extend .container;
         @media screen and (max-width: $container-resolution){
             overflow: hidden;
           }
+          @media screen and (max-width: $mobile-resulution){
+            overflow: hidden;
+            width: 100%;
+          }
     }
     &__title-padding{
         padding-top: 100px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-top: 30px;
+          }
+          @media screen and (max-width: $tablet-mini-resolution){
+            padding-top: 0px;
+          }
+          
         
-    }
-    &__title{
-
     }
     &__title h1{
         @include font-Red-Hat-Display-48;
         font-weight: 600;
-
+        @media screen and (max-width: $tablet-resolution){
+        font-family: "Red Hat Display";
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+        text-align: left;
+          }
+          @media screen and (max-width: $mobile-resulution){
+        font-family: "Red Hat Display";
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+        text-align: left;
+          }
+        
     }
 }

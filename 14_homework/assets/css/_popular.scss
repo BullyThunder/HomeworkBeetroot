@@ -5,7 +5,7 @@
     &__container{
         @extend .container;
         @media screen and (max-width: $container-resolution){
-            overflow: hidden;
+            
           }
     }
     &__caption{

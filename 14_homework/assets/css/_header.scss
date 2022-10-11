@@ -12,10 +12,22 @@
     &__content{
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: $ultra_mini-resulition){
+            flex-wrap: wrap;
+          }
+        
     }
     &__right-content{
         display: flex;
         column-gap: 84px;
+        @media screen and (max-width: $header-resolution){
+            column-gap: 20px;
+          }
+    }
+    &__menu{
+        @media screen and (max-width: $tablet-resolution){
+            display: none;
+          }
     }
     &__menu-item:hover:after{
     content: '';
@@ -43,4 +55,30 @@
 }
 .header__search{
     padding-top: 42px;
+    @media screen and (max-width: $tablet-resolution){
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+      }
+      @media screen and (max-width: $mobile-resulution){
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+      }
+    &-burger{
+        opacity: 0;
+        position: absolute;
+        @media screen and (max-width: $tablet-resolution){
+            opacity: 1;
+            position: relative;
+          }
+    }
+    &-block{
+        @media screen and (max-width: $tablet-resolution){
+            position: relative;
+          }
+    }
+
+
+
 }

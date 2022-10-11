@@ -30,12 +30,21 @@
         & img{
             max-width: 100%;
         }
+        @media screen and (max-width: $tablet-resolution){
+            max-width: 340px;
+            max-height: 280px;
+        }
+
     }
     &__text{
         display: flex;
         width: 50%;
         flex-direction: column;
         max-width: 50%;
+        @media screen and (max-width: $tablet-resolution){
+            max-width: 340px;
+            max-height: 280px;
+        }
     }
     &__little-text{
         @include font-Lato-16;
@@ -44,6 +53,9 @@
     &__little-text-padding{
         padding-top: 85px;
         padding-bottom: 30px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-top: 0px;
+        }
     }
     &__caption{
         @include font-Red-Hat-Display-24;
@@ -54,6 +66,9 @@
     }
     &__little-text-padding-top{
         padding-top: 50px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-top: 0px;
+        }
     }
     &__little-text{
         display: inline;
@@ -63,13 +78,19 @@
         content: 'Read more';
     }
     &__text-position{
-        display: inline-flex;
+        
         padding-right: 32px;
     }
     &__text-position{
-        display: inline-flex;
-        min-width: 448px;
+        display: inline;
+        & span{
+            max-width: 44px;
+        }
+        &-span{
+            max-width: 40px;
+        }
     }
+
     &__text-position-reverse p{
         min-width: 500px;
     }
