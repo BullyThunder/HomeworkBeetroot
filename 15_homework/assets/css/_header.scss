@@ -1,0 +1,16 @@
+.header{
+    &__container{
+        @extend .container;
+    }
+    &-padding{
+        padding-top: 36px;
+        padding-bottom: 38px;
+    }
+    &-content h2{
+        @include lato;
+        font-size: 1.14em;
+        line-height: 24px;
+        letter-spacing: 0.5em;
+        text-align: left;
+    }
+}

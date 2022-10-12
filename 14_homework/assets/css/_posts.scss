@@ -26,6 +26,7 @@
         flex-direction: row;
         align-items: center;
         color:#7B7B7B;
+        width: 33.33%;
         &-text{
             @include font-Lato-16;
         }
@@ -48,8 +49,7 @@
             display: flex;
             flex-direction: column;
             & img{
-                max-width: 370px;
-                max-height: 260px;
+                
             @media screen and (max-width: $container-resolution){
                 max-width: 100%;
                 max-height: 100%;
@@ -68,9 +68,9 @@
         &-center{
             display: flex;
             flex-direction: column;
+            width: 33.33%;
             & img{
-                max-width: 370px;
-                max-height: 260px;
+                
             @media screen and (max-width: $container-resolution){
                 max-width: 100%;
                 max-height: 100%;
@@ -80,9 +80,9 @@
         &-right{
             display: flex;
             flex-direction: column;
+            width: 33.33%;
             & img{
-                max-width: 370px;
-                max-height: 260px;
+                
             @media screen and (max-width: $container-resolution){
                 
                 max-height: 100%;
@@ -94,7 +94,7 @@
         }
         &-text-extra{
             @include font-Lato-16;
-            min-width: 300px;
+            
         }
         &-bottom{
             display: flex;

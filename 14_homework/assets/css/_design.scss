@@ -2,18 +2,36 @@
     &__container{
         @extend .container;
     }
+    &__span{
+        max-width: 173px;
+    }
     &__content{
         display: flex;
         flex-direction: row;
         column-gap: 30px;
-        @media screen and (max-width: $container-resolution){
-            
+        @media screen and (max-width: $tablet-little-resulition){
+            flex-direction: column-reverse;
+            row-gap: 50px;
           }
+          @media screen and (max-width: $big-mobile-resulution){
+            row-gap: 37px;
+          }
+        &-reverse{
+            display: flex;
+        flex-direction: row;
+        column-gap: 32px;
+        @media screen and (max-width: $tablet-little-resulition){
+            flex-direction: column;
+          }
+        }
     }
     &__wrapper{
         display: flex;
         flex-direction: column;
         row-gap: 50px;
+        @media screen and (max-width: $tablet-middle-resolution){
+            row-gap: 70px;
+        }
     }
     &__reverse{
         display: flex;
@@ -22,6 +40,9 @@
     }
     &__text-reverse-padding{
         padding-left: 120px;
+        @media screen and (max-width: $big-tablet-resolution){
+            padding-left: 0px;
+        }
     }
     &__image{
         display: flex;
@@ -34,6 +55,10 @@
             max-width: 340px;
             max-height: 280px;
         }
+        @media screen and (max-width: $tablet-little-resulition){
+            width: 100%;
+            max-width: 100%;
+        }
 
     }
     &__text{
@@ -42,8 +67,31 @@
         flex-direction: column;
         max-width: 50%;
         @media screen and (max-width: $tablet-resolution){
-            max-width: 340px;
+            
             max-height: 280px;
+        }
+        @media screen and (max-width: $tablet-little-resulition){
+            width: 100%;
+            max-width: 100%;
+          }
+        &-position {
+            &-reverse:nth-child(3){
+                max-width: 153px;
+            }
+            &-reverse>span{
+                max-width: 448px;
+            }
+            &-reverse > span > span{
+                max-width: 415px;
+            }
+            position-reverse > span > span > span{
+                max-width: 173px;
+            }
+        }
+        &-position span > span{
+            @media screen and (max-width: $tablet-resolution){
+                display: none;
+            }
         }
     }
     &__little-text{
@@ -60,6 +108,10 @@
     &__caption{
         @include font-Red-Hat-Display-24;
         max-width: 369px;
+        @media screen and (max-width: $big-mobile-resulution){
+            font-size: 1.57em;
+          }
+
     }
     &__caption-padding{
         padding-bottom: 15px;
@@ -73,27 +125,16 @@
     &__little-text{
         display: inline;
     }
+    &__arrows{
+        &-margin{
+            margin-left: 11px;
+        }
+    }
     &__arrows:hover::before{
         cursor: pointer;
         content: 'Read more';
     }
-    &__text-position{
-        
+    &__text-position-padding{
         padding-right: 32px;
     }
-    &__text-position{
-        display: inline;
-        & span{
-            max-width: 44px;
-        }
-        &-span{
-            max-width: 40px;
-        }
-    }
-
-    &__text-position-reverse p{
-        min-width: 500px;
-    }
-
-
 }

@@ -1,0 +1,14 @@
+.main{
+    &__container{
+        @extend .container;
+    }
+    
+    &__content{
+        &-title h1{
+            @include Red_hat_Display-48;
+        }
+        &-title-padding{
+            padding-bottom: 70px;
+        }
+    }
+}    
