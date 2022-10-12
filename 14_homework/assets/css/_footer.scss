@@ -37,6 +37,9 @@
             min-width: 50px;
             min-height: 50px;
         }
+        &-padding{
+            padding-top: 70px;
+        }
 
     }
     &__navigation-item:hover{
@@ -49,6 +52,9 @@
     &__block{
         display: flex;
         flex-direction: row;
+        @media screen and (max-width: $tablet-resolution){
+            flex-direction: column;
+          }
         &-text{
             display: flex;
             align-items: center;

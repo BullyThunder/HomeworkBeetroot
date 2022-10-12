@@ -240,6 +240,19 @@ a {
 .design__span {
   max-width: 173px;
 }
+.design__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.design__flex-reverse {
+  margin-left: auto;
+  max-width: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .design__content {
   display: flex;
   flex-direction: row;
@@ -300,11 +313,13 @@ a {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.design__text-reverse-padding {
-  padding-left: 120px;
+.design__text-reverse {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 962px) {
-  .design__text-reverse-padding {
+  .design__text-reverse {
     padding-left: 0px;
   }
 }
@@ -330,9 +345,7 @@ a {
 }
 .design__text {
   display: flex;
-  width: 50%;
   flex-direction: column;
-  max-width: 50%;
 }
 @media screen and (max-width: 768px) {
   .design__text {
@@ -377,7 +390,6 @@ a {
   display: flex;
 }
 .design__little-text-padding {
-  padding-top: 85px;
   padding-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -941,6 +953,9 @@ a {
   min-width: 50px;
   min-height: 50px;
 }
+.footer__navigation-padding {
+  padding-top: 70px;
+}
 .footer__navigation-item:hover {
   cursor: pointer;
   background-color: #565656;
@@ -951,6 +966,11 @@ a {
 .footer__block {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .footer__block {
+    flex-direction: column;
+  }
 }
 .footer__block-text {
   display: flex;

@@ -5,6 +5,20 @@
     &__span{
         max-width: 173px;
     }
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        &-reverse{
+            margin-left: auto;
+            max-width: 448px;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    }
+
     &__content{
         display: flex;
         flex-direction: row;
@@ -48,8 +62,10 @@
         flex-direction: row-reverse;
         column-gap: 32px;
     }
-    &__text-reverse-padding{
-        padding-left: 120px;
+    &__text-reverse{
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
         @media screen and (max-width: $big-tablet-resolution){
             padding-left: 0px;
         }
@@ -73,11 +89,8 @@
     }
     &__text{
         display: flex;
-        width: 50%;
         flex-direction: column;
-        max-width: 50%;
         @media screen and (max-width: $tablet-resolution){
-            
             max-height: 280px;
         }
         @media screen and (max-width: $tablet-little-resulition){
@@ -112,7 +125,7 @@
         display: flex;
     }
     &__little-text-padding{
-        padding-top: 85px;
+        
         padding-bottom: 30px;
         @media screen and (max-width: $tablet-resolution){
             padding-top: 0px;
