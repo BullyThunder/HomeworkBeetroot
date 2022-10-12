@@ -9,15 +9,20 @@
     &__content{
         display: flex;
         flex-direction: column;
+        width: 50%;
     }
     &__content-caption{
         @include font-Red-Hat-Display-48;
         &-padding{
         padding-top: 70px;
+        padding-bottom: 30px;
         }
     }
     &__navigation{
         display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: end;
         
         &-list{
             display: flex;
@@ -44,10 +49,9 @@
     &__block{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         &-text{
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             &-span{
             font-family: "Lato";
             font-size: 1.14em;
