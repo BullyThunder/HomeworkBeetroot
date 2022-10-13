@@ -10,6 +10,9 @@
         flex-direction: column;
         justify-content: center;
         width: 50%;
+        @media screen and (max-width: $tablet-little-resulition){
+            width: 100%;
+          }
         &-reverse{
             margin-left: auto;
             max-width: 448px;
@@ -17,6 +20,10 @@
         flex-direction: column;
         justify-content: center;
         width: 50%;
+        @media screen and (max-width: $tablet-little-resulition){
+            width: 100%;
+            margin-left: 0px;
+          }
         }
     }
 
@@ -33,9 +40,6 @@
           }
           @media screen and (max-width: $mobile-resulution){
             row-gap: 120px;
-          }
-          @media screen and (max-width: $ultra_mini-resulition){
-            row-gap: 150px;
           }
         &-reverse{
             display: flex;

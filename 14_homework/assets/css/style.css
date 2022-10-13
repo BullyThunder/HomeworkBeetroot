@@ -246,6 +246,11 @@ a {
   justify-content: center;
   width: 50%;
 }
+@media screen and (max-width: 608px) {
+  .design__flex {
+    width: 100%;
+  }
+}
 .design__flex-reverse {
   margin-left: auto;
   max-width: 448px;
@@ -253,6 +258,12 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 50%;
+}
+@media screen and (max-width: 608px) {
+  .design__flex-reverse {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 .design__content {
   display: flex;
@@ -274,11 +285,6 @@ a {
 @media screen and (max-width: 320px) {
   .design__content {
     row-gap: 120px;
-  }
-}
-@media screen and (max-width: 246px) {
-  .design__content {
-    row-gap: 150px;
   }
 }
 .design__content-reverse {
@@ -923,22 +929,47 @@ a {
   flex-direction: column;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .footer__content {
+    align-items: center;
+    width: 100%;
+  }
+}
 .footer__content-caption {
   font-family: "Red Hat Display", sans-serif;
   font-size: 3.42em;
   line-height: 64px;
   letter-spacing: 0.05em;
   text-align: left;
+  display: flex;
 }
 .footer__content-caption-padding {
   padding-top: 70px;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .footer__content-caption-padding {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__content-caption-padding {
+    font-size: 2.28em;
+  }
 }
 .footer__navigation {
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: end;
+}
+@media screen and (max-width: 768px) {
+  .footer__navigation {
+    justify-content: center;
+  }
 }
 .footer__navigation-list {
   display: flex;
@@ -971,6 +1002,7 @@ a {
 @media screen and (max-width: 768px) {
   .footer__block {
     flex-direction: column;
+    align-items: center;
   }
 }
 .footer__block-text {
@@ -985,6 +1017,11 @@ a {
   letter-spacing: 0.1em;
   text-align: left;
 }
+@media screen and (max-width: 320px) {
+  .footer__block-text-span {
+    font-size: 1.28em;
+  }
+}
 .footer__bottom-text {
   font-family: "Lato";
   font-size: 1.14em;
@@ -992,6 +1029,11 @@ a {
   line-height: 27px;
   letter-spacing: 0.1em;
   text-align: left;
+}
+@media screen and (max-width: 320px) {
+  .footer__bottom-text {
+    font-size: 1.28em;
+  }
 }
 .footer__bottom-padding {
   padding-top: 15px;
@@ -1012,4 +1054,9 @@ a {
   letter-spacing: 0.1em;
   text-align: left;
   color: #000000;
+}
+@media screen and (max-width: 320px) {
+  .footer__extra-text {
+    font-size: 1.14em;
+  }
 }/*# sourceMappingURL=style.css.map */
