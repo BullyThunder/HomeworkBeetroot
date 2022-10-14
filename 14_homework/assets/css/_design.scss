@@ -128,6 +128,7 @@
     &__little-text{
         @include font-Lato-16;
         display: flex;
+        color: #565656;
     }
     &__little-text-padding{
         
@@ -168,7 +169,22 @@
     &__arrows:hover::before{
         cursor: pointer;
         content: 'Read more';
+        color: #000000;
     }
+    &__arrows:hover:active{
+        cursor: pointer;
+        content: 'Read more';
+        color: #000000;
+    }
+
+   &__arrows-style{
+        fill: #7B7B7B;
+    }
+
+    &__arrows:hover &__arrows-style{
+        fill: #000000;
+    }
+
     &__text-position-padding{
         padding-right: 32px;
     }

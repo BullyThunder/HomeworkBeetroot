@@ -1,148 +1,179 @@
 .footer{
-    background-color: #F4F4F4;
-    &__container{
-        @extend .container;
-        @media screen and (max-width: $container-resolution){
+  background-color: #F4F4F4;
+  &__container{
+      @extend .container;
+      @media screen and (max-width: $container-resolution){
+          overflow: hidden;
+        }
+        @media screen and (max-width: $mobile-resulution){
+          overflow: visible;
+          }
+          @media screen and (max-width: $middle-mobile-resolution){
             overflow: hidden;
-          }
-    }
-    &__content{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        @media screen and (max-width: $tablet-resolution){
-            align-items: center;
-            width: 100%;
-          }
-          @media screen and (max-width: $mobile-resolution){
-            align-items: center;
-            max-width: 100%;
-          }
+            }
+      
+  }
+  &__content{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      @media screen and (max-width: $tablet-resolution){
+          align-items: center;
+          width: 100%;
+        }
+        @media screen and (max-width: $mobile-resulution){
+          align-items: center;
+          max-width: 100%;
+        }
 
-    }
-    &__content-caption{
-        @include font-Red-Hat-Display-48;
-        display: flex;
-        @media screen and (max-width: $tablet-resolution){
+  }
+  &__content-caption{
+      @include font-Red-Hat-Display-48;
+      display: flex;
+      @media screen and (max-width: $tablet-resolution){
+          display: flex;
+          align-items: center;
+          text-align: center;
+          display: inline-block;
+        }
+        @media screen and (max-width: $mobile-resulution){
+          font-size: 2.28em;
+        }
+      &-padding{
+      padding-top: 70px;
+      padding-bottom: 30px;
+      @media screen and (max-width: $tablet-resolution){
+          padding-top: 50px;
+          padding-bottom: 20px;
+        }
+      }
+  }
+  &__navigation{
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: end;
+      @media screen and (max-width: $tablet-resolution){
+          justify-content: center;
+          max-width: 100%;
+            width: 100%;
+        }
+        @media screen and (max-width: $mobile-resulution){
+          justify-content: center;
+          max-width: 100%;
+        }
+      &-list{
+          display: flex;
+          list-style: none;
+          column-gap: 23px;
+      }
+      &-item{
+          border: 1px solid #565656;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 50px;
+          min-height: 50px;
+          & a{
             display: flex;
+            justify-content: center;
             align-items: center;
-            text-align: center;
-            display: inline-block;
           }
           @media screen and (max-width: $mobile-resulution){
-            font-size: 2.28em;
-          }
-        &-padding{
-        padding-top: 70px;
-        padding-bottom: 30px;
-        @media screen and (max-width: $tablet-resolution){
-            padding-top: 50px;
-            padding-bottom: 20px;
-          }
-        }
-    }
-    &__navigation{
-        display: flex;
-        width: 50%;
-        align-items: center;
-        justify-content: end;
-        @media screen and (max-width: $tablet-resolution){
-            justify-content: center;
-          }
-        &-list{
-            display: flex;
-            list-style: none;
-            column-gap: 23px;
-        }
-        &-item{
-            border: 1px solid #565656;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 50px;
-            min-height: 50px;
-            @media screen and (max-width: $mobile-resolution){
-                max-width: 50px;
-                max-height: 50px;
-                width: 100%;
-                
-              }
-        }
-        &-padding{
-            padding-top: 70px;
-        }
-
-    }
-    &__navigation-item:hover{
-        cursor: pointer;
-        background-color: #565656;
-    }
-    &__navigation-item:hover &__icon-style{
-            fill: #FFFFFF;
-        }
-    &__block{
-        display: flex;
-        flex-direction: row;
-        @media screen and (max-width: $tablet-resolution){
-            flex-direction: column;
-            align-items: center;
-          }
-          
-        &-text{
-            display: flex;
-            align-items: center;
-            &-span{
-            font-family: "Lato";
-            font-size: 1.14em;
-            font-weight: 400;
-            line-height: 27px;
-            letter-spacing: 0.1em;
-            text-align: left;
-            @media screen and (max-width: $mobile-resulution){
-                font-size: 1.28em;
-                flex-wrap: wrap;
-              }
-
+              max-width: 50px;
+              max-height: 50px;
+              width: 100%;
+              
             }
-        }
-    }
-    &__bottom{
-        &-text{
-            font-family: "Lato";
-            font-size: 1.14em;
-            font-weight: 400;
-            line-height: 27px;
-            letter-spacing: 0.1em;
-            text-align: left;
-            @media screen and (max-width: $mobile-resulution){
-                font-size: 1.28em;
-              }
-        }
-        &-padding{
-            padding-top: 15px;
-        }
-    }
-    &__extra{
-        display: flex;
-        justify-content: center;
-        &-padding{
-            padding-top: 26px;
-            padding-bottom: 30px;
-        }
-        &-text{
-        font-family: "Lato";
-        font-size: 0.86em;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.1em;
-        text-align: left;
-        color: #000000;
-        @media screen and (max-width: $mobile-resulution){
-            font-size: 1.14em;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
+      }
+      &-padding{
+          padding-top: 70px;
+          @media screen and (max-width:$tablet-resolution){
+            padding-top: 51px;
           }
+      }
+
+  }
+  &__navigation-item:hover{
+      cursor: pointer;
+      background-color: #565656;
+  }
+  &__navigation-item:hover &__icon-style{
+          fill: #FFFFFF;
+      }
+      &__navigation-item &__icon:hover &__icon-style{
+        fill: #7B7B7B;
+      }
+  &__block{
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: $tablet-resolution){
+          flex-direction: column;
+          align-items: center;
         }
-    }
+        
+      &-text{
+          display: flex;
+          align-items: center;
+          &-span{
+          font-family: "Lato";
+          font-size: 1.14em;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0.1em;
+          text-align: left;
+          a:active{
+            color:#7B7B7B;
+          }
+          @media screen and (max-width: $mobile-resulution){
+              font-size: 1.28em;
+              flex-wrap: wrap;
+            }
+
+          }
+      }
+  }
+  &__bottom{
+      &-text{
+          font-family: "Lato";
+          font-size: 1.14em;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0.1em;
+          text-align: left;
+          @media screen and (max-width: $mobile-resulution){
+              font-size: 1.28em;
+            }
+      }
+      &-padding{
+          padding-top: 15px;
+      }
+  }
+  &__extra{
+      display: flex;
+      justify-content: center;
+      &-padding{
+          padding-top: 26px;
+          padding-bottom: 30px;
+          @media screen and (max-width: $tablet-resolution){
+            padding-top: 40px;
+            padding-bottom: 50px;
+          }
+      }
+      &-text{
+      font-family: "Lato";
+      font-size: 0.86em;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: #000000;
+      @media screen and (max-width:$mobile-resulution){
+          font-size: 1.14em;
+          text-align: center;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+  }
 }

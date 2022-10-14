@@ -29,6 +29,7 @@
             letter-spacing: 0.05em;
             text-align: left;
             max-width: 540px;
+            color: #565656;
             }
         }
 
@@ -49,14 +50,22 @@
         &-text{
             @include font-Lato-16;
         }
+        &-text:hover &-icon{
+            fill:#000000;
+        }
+        &-text:active &-icon{
+            fill:#000000;
+        }
         &-icon{
             margin-left: 20px;
+            fill:#7B7B7B;
         }
     }
     &__right:hover{
         color:#000000;
         cursor: pointer;
     }
+
     &__content{
         display: flex;
         flex-direction: row;

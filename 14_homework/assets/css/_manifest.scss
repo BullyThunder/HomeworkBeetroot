@@ -33,10 +33,14 @@
           @media screen and (max-width: $tablet-mini-resolution){
             padding-top: 0px;
           }
+          @media screen and (max-width: $mobile-resulution){
+            padding-top: 70px;
+            padding-left: 10px;
+          }
           
         
     }
-    &__title h1{
+    &__title h2{
         @include font-Red-Hat-Display-48;
         font-weight: 600;
         @media screen and (max-width: $tablet-resolution){

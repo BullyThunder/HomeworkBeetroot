@@ -29,7 +29,7 @@
             display: none;
           }
     }
-    &__menu-item:hover:after{
+    &__menu-item:active:after{
     content: '';
     display: block;
     height: 1px;

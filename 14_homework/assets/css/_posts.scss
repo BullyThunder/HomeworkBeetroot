@@ -37,10 +37,18 @@
 
         &-icon{
             margin-left: 20px;
+            fill:#7B7B7B;
         }
         &-icon:hover{
             color:#000000;
         }
+        &-text:active &-icon{
+            fill:#000000;
+        }
+        &-text:hover &-icon{
+            fill:#000000;
+        }
+
     }
     &__right:hover{
         color:#000000;
@@ -158,6 +166,7 @@
         }
         &-text-extra{
             @include font-Lato-16;
+            color: #565656;
             
         }
         &-bottom{
