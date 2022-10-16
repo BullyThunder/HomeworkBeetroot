@@ -1,0 +1,50 @@
+.we{
+    &__container{
+        @extend .container;
+    }
+    &__bg{
+        background-color: #FDE8F5;
+        border-radius: 50px;
+    }
+    &__padding{
+        margin-top: 100px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        column-gap: 75px;
+        justify-content: space-evenly;
+        &-padding{
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+        &-left{
+            width: 34%;
+            &-image{
+                
+            }
+            &-padding{
+                
+            }
+        }
+        &-right{
+            width: 43%;
+            &-text{
+                @include font-Montserrat-500-18;
+                font-size: 1.12em;
+                max-width: 500px;
+            }
+            &-caption{
+                max-width: 500px;
+                &-padding{
+                    padding-bottom: 40px;
+                }
+                @include font-Work-sans-700-40;
+            }
+            &-padding{
+                padding-top: 35px;
+            }
+        }
+
+    }
+}

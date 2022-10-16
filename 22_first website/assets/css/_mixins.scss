@@ -1,0 +1,31 @@
+@mixin font-Montserrat-500-16{
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+@mixin font-Montserrat-500-18{
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+@mixin font-Work-sans-700{
+    font-family: "Work Sans";
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+@mixin font-Work-sans-700-40{
+    font-family: "Work Sans";
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}

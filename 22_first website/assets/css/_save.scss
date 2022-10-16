@@ -1,0 +1,65 @@
+.save{
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        column-gap: 31px;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            max-width: 610px;
+            justify-content: end;
+        }
+        &-caption{
+            max-width: 601px;
+            font-size: 5em;
+        }
+        &-text{
+            @include font-Montserrat-500-18;
+        }
+        &-button{
+            &-style{
+                background-color: #9C69E2;
+                @include font-Montserrat-500-18;
+                font-size: 1em;
+                letter-spacing: 0.005em;
+                border: 1px solid #9C69E2;
+                color:#FFFFFF;
+                box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+                border-radius: 50px;
+                display: flex;
+                min-width: 210px;
+                min-height: 60px;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: #8A40EE;
+                    cursor: pointer;
+                    color:#FFFFFF;
+                }
+            }
+        }
+        &-absolute{
+            position: absolute;
+        }
+        &-right{
+            width: 49%;
+        }
+        &-image{
+            &-style{
+                max-width: 770px;
+            }
+        }
+    }
+    &__padding{
+        padding-top: 100px;
+    }
+    &__block-text{
+        max-width: 330px;
+    }
+
+
+}
