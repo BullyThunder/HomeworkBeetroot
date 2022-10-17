@@ -11,6 +11,14 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+}
+@mixin font-Montserrat-500-14{
+    font-family: "Montserrat";
+    font-size: 0.87em;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
 
 }
 @mixin font-Work-sans-700{
@@ -27,5 +35,32 @@
     line-height: 52px;
     letter-spacing: 0em;
     text-align: left;
+}
+@mixin font-Work-sans-400-24{
+    font-family: "Work Sans";
+    font-size:  1.5em;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#212353;
+}
+@mixin font-Montserrat-400-16{
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#4B5D68;
+}
+@mixin font-Montserrat-700-16{
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color:#212353;
 
 }

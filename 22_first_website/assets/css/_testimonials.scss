@@ -1,0 +1,117 @@
+.testimonials{
+    &__container{
+        @extend .container;
+    }
+    &__bg{
+        background-color: #CCDDFF;
+        border-radius: 50px;
+        border: 1px solid #9C69E2;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    }
+    &__margin{
+        margin-top: 120px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 80px;
+        position: relative;
+       
+    }
+    &__caption{
+        z-index: 10;
+        & h2{
+        @include font-Work-sans-700-40;
+        color:#4B5D68;
+        z-index: 10;
+        }
+        display: flex;
+        justify-content: center;
+        &-padding{
+            padding-top: 80px;
+        }
+    }
+    &__people{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 10;
+
+        &-absolute{
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: 1;
+            &-right{
+                position: absolute;
+            top:0;
+            right: 0;
+            }
+        }
+        &-image{
+            &-style{
+                max-width: 90px;
+                max-height: 90px;
+                border-radius: 50%;
+            }
+        }
+        &-bottom{
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            &-padding{
+                padding-top: 19px;
+            }
+        }
+        
+        &-left{
+            background-color: #FFFFFF;
+            display: flex;
+            border-radius: 50px;
+            flex-direction: column;
+            column-gap: 15px;
+            &-padding{
+                margin-bottom: 80px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+        &-right{
+            background-color: #FFFFFF;
+            display: flex;
+            border-radius: 50px;
+            flex-direction: row;
+            column-gap: 15px;
+        }
+        &-text{
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+            z-index: 10;
+            &-block{
+                display: flex;
+                flex-direction: column;
+            }
+            & span:nth-child(1){
+                @include font-Montserrat-500-18;
+                font-size: 1em;
+            }
+            & span:nth-child(2){
+                @include font-Montserrat-500-14;
+                color:#9C69E2;
+            }
+            & p{
+                @include font-Montserrat-400-16;
+            }
+            &-link{
+                &-padding{
+                    padding-bottom: 19px;
+                }
+                color:#9C69E2;
+            }
+    }
+}
+
+}
