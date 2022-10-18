@@ -258,22 +258,37 @@ a {
   max-width: 605px;
 }
 .features__content {
-  width: 84.5%;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px 30px;
 }
-.features__content-top {
+.features__content-block {
   display: flex;
+  align-items: center;
 }
-.features__content-top-left {
+.features__content-block-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 20px;
-  background-color: #F0FAF9;
   border-radius: 50px;
-  width: 34.2%;
+  position: relative;
+  z-index: 10;
 }
-.features__content-top-left-svg {
+.features__content-block-left-bg_1 {
+  background-color: #F0FAF9;
+}
+.features__content-block-left-bg_2 {
+  background-color: #F6F0FD;
+}
+.features__content-block-left-bg_3 {
+  background-color: #FEF0F8;
+}
+.features__content-block-left-bg_4 {
+  background-color: #EAF6FC;
+}
+.features__content-block-left-svg {
   font-family: "Montserrat";
   font-size: 1em;
   font-weight: 700;
@@ -286,17 +301,36 @@ a {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.features__content-top-left-absolute {
-  position: absolute;
-  left: 0;
-  bottom: 40;
-  margin-left: -100px;
+.features__content-block-left-picture_1 {
+  z-index: 11;
+  margin-right: -60px;
+  max-width: 230px;
+  max-height: 180px;
 }
-.features__content-top-left-icon {
+.features__content-block-left-picture_2 {
+  z-index: 11;
+  margin-right: -60px;
+  max-width: 241px;
+  max-height: 180px;
+}
+.features__content-block-left-picture_3 {
+  z-index: 11;
+  margin-right: -60px;
+  max-width: 245px;
+  max-height: 180px;
+}
+.features__content-block-left-picture_4 {
+  z-index: 11;
+  margin-right: -60px;
+  max-width: 230px;
+  max-height: 180px;
+}
+.features__content-block-left-icon {
   max-width: 22px;
   max-height: 16px;
+  z-index: 10;
 }
-.features__content-top-left-caption {
+.features__content-block-left-caption {
   font-family: "Work Sans";
   font-size: 1.5em;
   font-weight: 400;
@@ -304,8 +338,38 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #212353;
+  z-index: 11;
 }
-.features__content-top-left-text {
+.features__content-block-left-absolute {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 1;
+}
+.features__content-block-left-absolute_1 {
+  position: absolute;
+  bottom: 21px;
+  right: 21px;
+  z-index: 1;
+}
+.features__content-block-left-absolute_3 {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  z-index: 1;
+}
+.features__content-block-left-absolute_4 {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.features__content-block-left-absolute_5 {
+  position: absolute;
+  right: 25px;
+  bottom: 27px;
+  z-index: 1;
+}
+.features__content-block-left-text {
   max-width: 230px;
   font-family: "Montserrat";
   font-size: 1em;
@@ -314,14 +378,24 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #4B5D68;
+  z-index: 10;
 }
-.features__content-top-left-padding {
+.features__content-block-left-text-padding {
+  padding-bottom: 36px;
+}
+.features__content-block-left-text-padding_ {
+  padding-bottom: 60px;
+}
+.features__content-block-left-text-padding-bottom {
+  padding-bottom: 85px;
+}
+.features__content-block-left-padding {
   padding-left: 100px;
   padding-top: 62px;
   padding-bottom: 62px;
   padding-right: 70px;
 }
-.features__content-top-left-extra {
+.features__content-block-left-extra {
   font-family: "Montserrat";
   font-size: 1em;
   font-weight: 700;
@@ -666,11 +740,6 @@ a {
   flex-direction: column;
   row-gap: 30px;
 }
-.footer__right-item a svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .footer__right-span {
   font-family: "Montserrat";
   font-size: 1em;
@@ -696,19 +765,17 @@ a {
 }
 .footer__right-list a {
   color: #4B5D68;
-}
-.footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #C0C0C0;
   max-width: 50px;
   max-height: 50px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+  color: #4B5D68;
 }
-.footer__icon__instagram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer__icon {
+  max-width: 50px;
+  max-height: 50px;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */

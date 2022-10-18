@@ -21,41 +21,115 @@
         max-width: 605px;
     }
     &__content{
-        width: 84.5%;
-        position: relative;
-        &-top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px 30px;
+        &-block{
             display: flex;
+            align-items: center;
             &-left{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 row-gap: 20px;
-                background-color: #F0FAF9;
                 border-radius: 50px;
-                width: 34.2%;
+                position: relative;
+                z-index: 10;
+                &-bg_1{
+                    background-color: #F0FAF9;
+                }
+                &-bg_2{
+                    background-color:#F6F0FD;
+                }
+                &-bg_3{
+                    background-color:#FEF0F8;
+                }
+                &-bg_4{
+                    background-color:#EAF6FC;
+                }
                 &-svg{
                     @include font-Montserrat-700-16;
                     display: flex;
                     flex-direction: row;
                     column-gap: 20px;
                 }
-                &-absolute{
-                    position: absolute;
-                    left: 0;
-                    bottom: 40;
-                    margin-left: -100px;
-                    
+                &-picture_1{
+                    z-index: 11;
+                    margin-right: -60px;
+                    max-width: 230px;
+                    max-height: 180px;
+                }
+                &-picture_2{
+                    z-index: 11;
+                    margin-right: -60px;
+                    max-width: 241px;
+                    max-height: 180px;
+                }
+                &-picture_3{
+                    z-index: 11;
+                    margin-right: -60px;
+                    max-width: 245px;
+                    max-height: 180px;
+                }
+                &-picture_4{
+                    z-index: 11;
+                    margin-right: -60px;
+                    max-width: 230px;
+                    max-height: 180px;
                 }
                 &-icon{
                     max-width: 22px;
                     max-height: 16px;
+                    z-index: 10;
                 }
                 &-caption {
                     @include font-Work-sans-400-24;
+                    z-index: 11;
+                }
+                &-absolute{
+                    position: absolute;
+                    top:20px;
+                    right:50px;
+                    z-index: 1;
+                    &_1{
+                        position: absolute;
+                        bottom:21px;
+                        right: 21px;
+                        z-index: 1;
+                    }
+                    &_3{
+                        position: absolute;
+                        top:21px;
+                        right: 21px;
+                        z-index: 1;
+                    }
+                    &_4{
+                        position: absolute;
+                        left:0;
+                        z-index: 1;
+                    }
+                    &_5{
+                        position: absolute;
+                        right: 25px;
+                        bottom:27px;
+                        z-index: 1;
+                    }
+
                 }
                 &-text {
                     max-width: 230px;
                     @include font-Montserrat-400-16;
+                    z-index: 10;
+                    &-padding{
+                        padding-bottom: 36px;
+                       &_{
+                        padding-bottom: 60px;
+                       }
+                       &-bottom{
+                        padding-bottom: 85px;
+                       }
+                    }
                 }
                 &-padding{
                        padding-left: 100px;
@@ -67,7 +141,7 @@
                 &-extra{
                     @include font-Montserrat-700-16;
                 }
-            }     
+            }  
         }
     }
 }

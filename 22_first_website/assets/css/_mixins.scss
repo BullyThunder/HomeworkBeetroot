@@ -71,5 +71,9 @@
     letter-spacing: 0.005em;
     text-align: left;
     color:#212353;
-
+}
+@mixin tablet-resolution(){
+    @media (max-width: $tablet-resolution){
+        
+    }
 }
