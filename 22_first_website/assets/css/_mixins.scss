@@ -28,6 +28,15 @@
     letter-spacing: 0em;
     text-align: left;
 }
+@mixin font-Montserrat-600-16{
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 @mixin font-Work-sans-700-40{
     font-family: "Work Sans";
     font-size: 2.5em;
