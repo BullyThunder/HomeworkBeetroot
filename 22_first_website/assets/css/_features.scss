@@ -25,17 +25,21 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 50px 30px;
+        overflow: hidden;
         &-block{
             display: flex;
             align-items: center;
+            max-height: 400px;
             &-left{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                min-width: 70%;
                 row-gap: 20px;
                 border-radius: 50px;
                 position: relative;
                 z-index: 10;
+
                 &-bg_1{
                     background-color: #F0FAF9;
                 }
@@ -53,6 +57,10 @@
                     display: flex;
                     flex-direction: row;
                     column-gap: 20px;
+                    align-items: center;
+                    & a{
+                        color:#212353;
+                    }
                 }
                 &-picture_1{
                     z-index: 11;
@@ -68,9 +76,10 @@
                 }
                 &-picture_3{
                     z-index: 11;
-                    margin-right: -60px;
+                    margin-right: -79px;
                     max-width: 245px;
                     max-height: 180px;
+
                 }
                 &-picture_4{
                     z-index: 11;
@@ -129,6 +138,12 @@
                        &-bottom{
                         padding-bottom: 85px;
                        }
+                    }
+                    &-extra{
+                        @include font-Montserrat-400-16;
+                        z-index: 10;
+                        max-width: 230px;
+                        max-height: 180px;
                     }
                 }
                 &-padding{

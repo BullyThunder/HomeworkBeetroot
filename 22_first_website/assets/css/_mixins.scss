@@ -72,8 +72,13 @@
     text-align: left;
     color:#212353;
 }
-@mixin tablet-resolution(){
-    @media (max-width: $tablet-resolution){
-        
+@mixin media($resolution){
+    @media (max-width: $resolution){
+        @content;
+    }
+}
+@mixin media_min ($resolution){
+    @media (min-width: $resolution){
+        @content;
     }
 }

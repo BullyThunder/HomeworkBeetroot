@@ -1,0 +1,61 @@
+.header{
+    &__logo{
+        @include media('992px'){
+    padding: 0px;
+    margin-bottom: 10px;
+                }
+            }
+    &__content{
+    @include media ('992px'){
+        align-items: center;
+        margin-top: 10px;
+      }
+    }
+    &__menu{
+    @include media ('991px'){
+        position: absolute;
+            top:100%;
+            left:0;
+            right:0;
+            transform: translateX(-100%);
+            transition: all .3s linear;
+        }
+            &-padding {
+        @include media ('991px'){
+            padding: 0px;
+        }
+    }
+             &-list {
+        @include media('991px'){
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+          } 
+
+        }
+            &-item{
+                @include media('991px'){
+                display: block;
+          } 
+            }
+        }
+    &__button{
+        @include media('992px'){
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            &-style{
+                &-padding{
+                    @include media ('992px'){
+                        max-height: 60px;
+                    }
+                }
+            }
+      } 
+    }
+    &__burger{
+        @include media_min('992px'){
+            display: none;
+      } 
+    }
+}

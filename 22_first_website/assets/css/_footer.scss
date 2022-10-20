@@ -155,9 +155,11 @@
             }
             &-span{
                 @include font-Montserrat-600-16; 
+                line-height: 36px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
                 
             }
             &-list{
@@ -166,9 +168,6 @@
                 flex-direction: column;
                 row-gap: 10px;
                 @include font-Montserrat-500-16;
-                & a{
-                  
-                }
             }
         }
         &__right{
@@ -180,6 +179,9 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                &-margin{
+                    margin-top: 7px;
+                }
             }
             &-list{
                 display: flex;
@@ -195,12 +197,7 @@
                 max-width: 50px;
                 max-height: 50px;
                 border-radius: 50%;
-                color: #4B5D68;
                 }
-                & a:hover{
-                    
-                }
-
         }
     }
     &__icon{
@@ -209,11 +206,17 @@
         max-width: 50px;
         max-height: 50px;
     }
-    &__icon:hover{
+    
+    &__right-item &__right-link:hover &__icon {
         fill: #00ACEE;
-    }
-    &__facebook{
-        fill:white;
-    }
+        background-color: white;
+     }
+     &__right-item &__right-link:hover {
+        outline: 1px solid #00ACEE;
+        
+     }
+     &__right-item:hover{
+        border-color: #00ACEE;
+     }
     
 }  
