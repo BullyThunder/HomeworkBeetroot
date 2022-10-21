@@ -211,12 +211,28 @@
         fill: #00ACEE;
         background-color: white;
      }
+     &__right-item &__right-link_facebook:hover {
+        outline: 1px solid #3B5998; 
+     }
+     &__right-item &__right-link_facebook:hover &__icon {
+        fill: #3B5998; 
+        background-color: white;
+     }
+     &__right-item &__right-link_instagram:hover {
+        outline: 1px solid #C13584; 
+     }
+     &__right-item &__right-link_instagram:hover &__icon {
+        fill: #C13584; 
+        background-color: white;
+     }
      &__right-item &__right-link:hover {
-        outline: 1px solid #00ACEE;
-        
+        outline: 1px solid #00ACEE; 
      }
      &__right-item:hover{
         border-color: #00ACEE;
      }
+
+
+
     
 }  

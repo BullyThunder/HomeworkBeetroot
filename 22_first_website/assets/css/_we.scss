@@ -20,6 +20,9 @@
         }
         &-left{
             width: 34%;
+            &-image{
+                max-width: 100%;
+            }
         }
         &-right{
             width: 43%;

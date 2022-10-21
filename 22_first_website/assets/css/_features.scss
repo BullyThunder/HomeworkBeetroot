@@ -1,6 +1,8 @@
 .features{
+   
     &__container{
         @extend .container;
+        width: 85%;
     }
     &__padding{
         padding-top: 120px;
@@ -25,7 +27,6 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 50px 30px;
-        overflow: hidden;
         &-block{
             display: flex;
             align-items: center;
@@ -39,7 +40,7 @@
                 border-radius: 50px;
                 position: relative;
                 z-index: 10;
-
+                max-height: 400px;
                 &-bg_1{
                     background-color: #F0FAF9;
                 }
@@ -70,7 +71,7 @@
                 }
                 &-picture_2{
                     z-index: 11;
-                    margin-right: -60px;
+                    margin-right: -70px;
                     max-width: 241px;
                     max-height: 180px;
                 }
@@ -130,20 +131,23 @@
                     max-width: 230px;
                     @include font-Montserrat-400-16;
                     z-index: 10;
-                    &-padding{
-                        padding-bottom: 36px;
-                       &_{
-                        padding-bottom: 60px;
-                       }
-                       &-bottom{
-                        padding-bottom: 85px;
-                       }
+                    &-padding_1{
+                        padding-bottom: 25px;
                     }
+                    &-padding_2{
+                        padding-bottom: 50px;
+                    }
+                    &-padding_3{
+                        padding-bottom: 75px;
+                    }
+                    &-padding_4{
+                        padding-bottom: 5px;
+                    }
+
                     &-extra{
                         @include font-Montserrat-400-16;
                         z-index: 10;
                         max-width: 230px;
-                        max-height: 180px;
                     }
                 }
                 &-padding{

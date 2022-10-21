@@ -1,0 +1,12 @@
+.footer{
+    
+    &__top{
+        &-right{
+            @include media ('915px')
+            {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+    }
+}

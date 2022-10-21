@@ -1,4 +1,8 @@
 .header{
+    
+    @include media('609px'){
+        max-width: 608px;
+    }
     &__logo{
         @include media('992px'){
     padding: 0px;
@@ -15,7 +19,7 @@
     @include media ('991px'){
         position: absolute;
             top:100%;
-            left:0;
+            left: 0;
             right:0;
             transform: translateX(-100%);
             transition: all .3s linear;
@@ -40,11 +44,15 @@
             }
         }
     &__button{
+        
         @include media('992px'){
             display: flex;
             align-items: center;
             column-gap: 30px;
             &-style{
+                @include media ('425px'){
+                    display: none;
+                }
                 &-padding{
                     @include media ('992px'){
                         max-height: 60px;
@@ -52,10 +60,16 @@
                 }
             }
       } 
+
     }
     &__burger{
         @include media_min('992px'){
             display: none;
       } 
+      &-label{
+        @include media_min('992px'){
+            display: none;
+      } 
+      }
     }
 }

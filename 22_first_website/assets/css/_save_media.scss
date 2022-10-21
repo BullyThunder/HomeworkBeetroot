@@ -1,0 +1,26 @@
+.save{
+    
+    &__content{
+        @include media('1024px'){
+            flex-direction: column;
+      } 
+      &-absolute{
+        @include media('1024px'){
+            position: relative;
+      }
+  }
+  &-right{
+    @include media('1024px'){
+        margin-top: 0px;
+        width: 100%;
+  } 
+}
+      }
+        &-image{
+            &-style{
+                @include media('1024px'){
+                    max-height: 407px;
+              } 
+            }
+        }  
+    }

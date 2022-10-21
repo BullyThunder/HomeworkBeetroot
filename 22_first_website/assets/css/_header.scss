@@ -92,9 +92,6 @@
         background-color: transparent;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        &-padding{
-            
-        }
         &:before,
         &:after{
             content: '';
@@ -112,7 +109,7 @@
         display: none;
 
         &:checked {
-            & ~ .header__burger-label {
+            & ~ .header__content-right {
                 .header__burger {
                     border-color: transparent;
     
@@ -126,8 +123,10 @@
                     }
                 }
             }
-            & + .header__menu {
-                transform: translateX(0);
+            & + .header__content-left {
+                .header__menu  {
+                    transform: translateX(0);
+                }
             }
         } 
     }

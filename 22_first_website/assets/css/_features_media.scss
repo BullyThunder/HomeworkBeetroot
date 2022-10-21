@@ -1,0 +1,71 @@
+.features{
+    
+    &__content{
+            @include media('1260px'){
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-block{
+            @include media('425px'){
+                flex-direction: column;
+                max-height: none;
+         }
+            &-left{
+                &-picture_1 { @include media('425px'){
+                    margin-right: 0px;
+                   }
+                }  
+                &-picture_2 { @include media('425px'){
+                    margin-right: 0px;
+                   }
+                }  
+                &-picture_3 { @include media('425px'){
+                    margin-right: 0px;
+                   }
+                }  
+                &-picture_4 { @include media('425px'){
+                    margin-right: 0px;
+                   }
+                }  
+
+                &-caption{
+                    @include media('611px'){
+                        font-size: 1.2em;
+                 }
+                }
+                 &-text{
+                    @include media('611px'){
+                        font-size: 0.8em;
+                        &-extra{
+                            @include media ('611px'){
+                                font-size: 0.8em;
+                            }
+                        }
+                 }
+                }
+                &-svg{
+                    @include media ('611px'){
+                        font-size: 0.8em;
+                    }
+                }
+                &-icon{
+                @include media ('611px'){
+                    max-width: 18px;
+                    max-height: 12px;
+                }
+            }
+                &-padding{
+                    @include media('611px'){
+                       padding-top: 15px;
+                }
+                @include media('425px'){
+                    padding-right: 20px;
+                    padding-left: 20px;
+             }
+                @include media('611px'){
+                    padding-top: 15px;
+             }
+            }
+        }
+    }
+}
+}
