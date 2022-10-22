@@ -15,7 +15,10 @@
                 @include media('915px'){
                     margin-right: 10px;
                     margin-left: 10px;
-
+                }
+                @include media('1080px'){
+                    margin-right: 15px;
+                    margin-left: 15px;
                 }
             }
         }

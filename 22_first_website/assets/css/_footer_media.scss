@@ -1,6 +1,11 @@
 .footer{
     
     &__top{
+        @include media ('633px'){
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+        }
         &-right{
             @include media ('915px')
             {
@@ -8,5 +13,25 @@
                 row-gap: 20px;
             }
         }
+    }
+    &__bottom{
+        @include media ('1260px'){
+            column-gap: 120px;
+        }
+        @include media ('1096px'){
+            column-gap: 80px;
+        }
+        &-content{
+            &-right{
+                @include media ('1096px'){
+                    column-gap: 60px;
+                }
+            }
+        }
+            @include media ('915px'){
+                flex-direction: column;
+                row-gap: 30px;
+            }
+
     }
 }

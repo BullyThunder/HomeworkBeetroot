@@ -1,16 +1,13 @@
 .header{
+    
     position: relative;
-    padding: 10px 0;
+    padding: 20px 0;
     &__container{
         @extend .container;
     }
-    &__logo{
+    &__logo svg{
         max-width: 45px;
         max-height: 35px;
-        &-padding{
-            padding: 33px 0;
-            
-        }
     }
     &__content{
         display: flex;
@@ -19,6 +16,7 @@
         &-left{
         display: flex;
         flex-direction: row;
+        align-items: center;
         column-gap: 120px;
         }
         &-right{
@@ -30,9 +28,6 @@
     &__menu{
         @include font-Montserrat-500-16;
         color:#4B5D68; 
-        &-padding{
-            padding: 37px 0;
-        }
         &-list{
         list-style: none;
         display: flex;
@@ -64,10 +59,13 @@
             background-color: #9C69E2;
             cursor: pointer;
             color:#FFFFFF;
+            transition: .3s;
         }
 
         &-padding{
             padding-left: 23px;
+            padding-top: 16px;
+            padding-bottom: 16px;
             min-height: 60px;
             display: flex;
             align-items: center;

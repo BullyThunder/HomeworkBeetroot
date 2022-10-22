@@ -5,10 +5,13 @@
             grid-template-columns: repeat(1, 1fr);
         }
         &-block{
-            @include media('425px'){
+            @include media('576px'){
                 flex-direction: column;
                 max-height: none;
          }
+         @include media('768px'){
+            margin-right: 20px;
+     }
             &-left{
                 &-picture_1 { @include media('425px'){
                     margin-right: 0px;

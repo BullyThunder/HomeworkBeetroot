@@ -44,14 +44,11 @@ svg path {
 
 .header {
   position: relative;
-  padding: 10px 0;
+  padding: 20px 0;
 }
-.header__logo {
+.header__logo svg {
   max-width: 45px;
   max-height: 35px;
-}
-.header__logo-padding {
-  padding: 33px 0;
 }
 .header__content {
   display: flex;
@@ -61,6 +58,7 @@ svg path {
 .header__content-left {
   display: flex;
   flex-direction: row;
+  align-items: center;
   -moz-column-gap: 120px;
        column-gap: 120px;
 }
@@ -75,9 +73,6 @@ svg path {
   letter-spacing: 0em;
   text-align: left;
   color: #4B5D68;
-}
-.header__menu-padding {
-  padding: 37px 0;
 }
 .header__menu-list {
   list-style: none;
@@ -115,9 +110,12 @@ svg path {
   background-color: #9C69E2;
   cursor: pointer;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 .header__button-style-padding {
   padding-left: 23px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -171,6 +169,10 @@ svg path {
   padding: 10px 0 10px 10px;
 }
 
+.save {
+  width: 100%;
+  overflow: hidden;
+}
 .save__content {
   display: flex;
   flex-direction: row;
@@ -190,6 +192,7 @@ svg path {
 .save__content-caption {
   max-width: 601px;
   font-size: 5em;
+  color: #212353;
 }
 .save__content-text {
   font-family: "Montserrat";
@@ -267,6 +270,9 @@ svg path {
 }
 .we__content-right {
   width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .we__content-right-text {
   font-family: "Montserrat";
@@ -276,6 +282,7 @@ svg path {
   text-align: left;
   font-size: 1.12em;
   max-width: 500px;
+  color: #4B5D68;
 }
 .we__content-right-caption {
   max-width: 500px;
@@ -285,12 +292,10 @@ svg path {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
+  color: #212353;
 }
 .we__content-right-caption-padding {
   padding-bottom: 40px;
-}
-.we__content-right-padding {
-  padding-top: 35px;
 }
 
 .features__container {
@@ -303,6 +308,7 @@ svg path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 50px;
   padding-bottom: 80px;
 }
 .features__caption {
@@ -312,6 +318,7 @@ svg path {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
+  color: #212353;
 }
 .features__text {
   font-family: "Montserrat";
@@ -321,6 +328,7 @@ svg path {
   text-align: left;
   text-align: center;
   max-width: 605px;
+  color: #4B5D68;
 }
 .features__content {
   display: grid;
@@ -491,6 +499,10 @@ svg path {
   color: #212353;
 }
 
+.testimonials {
+  width: 100%;
+  overflow: hidden;
+}
 .testimonials__bg {
   background-color: #CCDDFF;
   border-radius: 50px;
@@ -595,6 +607,7 @@ svg path {
   letter-spacing: 0em;
   text-align: left;
   font-size: 1em;
+  color: #212353;
 }
 .testimonials__people-text span:nth-child(2) {
   font-family: "Montserrat";
@@ -621,6 +634,10 @@ svg path {
   padding-bottom: 19px;
 }
 
+.footer {
+  width: 100%;
+  overflow: hidden;
+}
 .footer__margin {
   margin-top: 120px;
 }
@@ -636,6 +653,7 @@ svg path {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
+  color: #212353;
 }
 .footer__top-left {
   display: flex;
@@ -649,6 +667,7 @@ svg path {
   letter-spacing: 0em;
   text-align: left;
   font-size: 1.12em;
+  color: #4B5D68;
 }
 .footer__top-right {
   display: flex;
@@ -693,10 +712,11 @@ svg path {
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  border: 1px solid #9C69E2;
+  border: 0px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
-  min-height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 52px;
   padding-right: 52px;
 }
@@ -704,25 +724,29 @@ svg path {
   background-color: #EB4BAB;
   cursor: pointer;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 .footer__button-style:hover {
   background-color: #9C69E2;
   cursor: pointer;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 .footer__button-style:hover .footer__arrows {
   stroke: #FFFFFF;
 }
 .footer__button-style-padding {
   padding-left: 23px;
-  min-height: 60px;
   display: flex;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .footer__bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
 }
 .footer__bottom-margin {
   margin-top: 100px;
@@ -732,6 +756,12 @@ svg path {
   flex-direction: column;
   row-gap: 10px;
   margin-right: 25px;
+  color: #212353;
+}
+.footer__bottom-content-right {
+  display: flex;
+  -moz-column-gap: 169px;
+       column-gap: 169px;
 }
 .footer__logo {
   display: flex;
@@ -739,7 +769,7 @@ svg path {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.footer__logo_svg {
+.footer__logo svg {
   max-width: 49px;
   max-height: 35px;
 }
@@ -782,6 +812,7 @@ svg path {
 }
 .footer__reserved-padding {
   padding-top: 99px;
+  padding-bottom: 120px;
 }
 .footer__middle {
   display: flex;
@@ -807,6 +838,7 @@ svg path {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #212353;
 }
 .footer__middle-list {
   display: flex;
@@ -868,26 +900,33 @@ svg path {
 .footer__right-item .footer__right-link:hover .footer__icon {
   fill: #00ACEE;
   background-color: white;
+  transition: 0.3s;
 }
 .footer__right-item .footer__right-link_facebook:hover {
   outline: 1px solid #3B5998;
+  transition: 0.3s;
 }
 .footer__right-item .footer__right-link_facebook:hover .footer__icon {
   fill: #3B5998;
   background-color: white;
+  transition: 0.3s;
 }
 .footer__right-item .footer__right-link_instagram:hover {
   outline: 1px solid #C13584;
+  transition: 0.3s;
 }
 .footer__right-item .footer__right-link_instagram:hover .footer__icon {
   fill: #C13584;
   background-color: white;
+  transition: 0.3s;
 }
 .footer__right-item .footer__right-link:hover {
   outline: 1px solid #00ACEE;
+  transition: 0.3s;
 }
 .footer__right-item:hover {
   border-color: #00ACEE;
+  transition: 0.3s;
 }
 
 @media (max-width: 609px) {
@@ -966,6 +1005,7 @@ svg path {
 @media (max-width: 1024px) {
   .save__content {
     flex-direction: column;
+    row-gap: 50px;
   }
 }
 @media (max-width: 1024px) {
@@ -979,16 +1019,38 @@ svg path {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .save__content-left {
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .save-image-style {
     max-height: 407px;
   }
 }
 
+.we {
+  width: 100%;
+  overflow: hidden;
+}
 @media (max-width: 1024px) {
   .we__content {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 1024px) and (max-width: 576px) {
+  .we__content-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1080px) {
+  .we__content {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 40px;
   }
 }
 @media (max-width: 1024px) {
@@ -999,16 +1061,28 @@ svg path {
     max-width: 100%;
   }
 }
+@media (max-width: 1024px) {
+  .we__content-right {
+    width: 100%;
+    align-items: center;
+    margin: 0px auto;
+  }
+}
 
 @media (max-width: 1260px) {
   .features__content {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .features__content-block {
     flex-direction: column;
     max-height: none;
+  }
+}
+@media (max-width: 768px) {
+  .features__content-block {
+    margin-right: 20px;
   }
 }
 @media (max-width: 425px) {
@@ -1091,10 +1165,47 @@ svg path {
     margin-left: 10px;
   }
 }
+@media (max-width: 1080px) {
+  .testimonials__people-left-padding {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
 
+@media (max-width: 633px) {
+  .footer__top {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+  }
+}
 @media (max-width: 915px) {
   .footer__top-right {
     flex-direction: column;
     row-gap: 20px;
+  }
+}
+@media (max-width: 1260px) {
+  .footer__bottom {
+    -moz-column-gap: 120px;
+         column-gap: 120px;
+  }
+}
+@media (max-width: 1096px) {
+  .footer__bottom {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+@media (max-width: 1096px) {
+  .footer__bottom-content-right {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+}
+@media (max-width: 915px) {
+  .footer__bottom {
+    flex-direction: column;
+    row-gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

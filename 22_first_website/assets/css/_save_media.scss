@@ -3,7 +3,8 @@
     &__content{
         @include media('1024px'){
             flex-direction: column;
-      } 
+            row-gap: 50px;
+      }
       &-absolute{
         @include media('1024px'){
             position: relative;
@@ -15,6 +16,11 @@
         width: 100%;
   } 
 }
+ &-left{
+    @include media('768px'){
+        width: 100%;
+  }
+ }
       }
         &-image{
             &-style{

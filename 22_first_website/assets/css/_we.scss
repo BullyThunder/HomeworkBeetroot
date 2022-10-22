@@ -26,10 +26,14 @@
         }
         &-right{
             width: 43%;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
             &-text{
                 @include font-Montserrat-500-18;
                 font-size: 1.12em;
                 max-width: 500px;
+                color:#4B5D68;
             }
             &-caption{
                 max-width: 500px;
@@ -37,9 +41,7 @@
                     padding-bottom: 40px;
                 }
                 @include font-Work-sans-700-40;
-            }
-            &-padding{
-                padding-top: 35px;
+                color:#212353;
             }
         }
 

@@ -1,4 +1,6 @@
 .save{
+    width: 100%;
+   overflow: hidden;
     &__container{
         @extend .container;
     }
@@ -19,6 +21,7 @@
         &-caption{
             max-width: 601px;
             font-size: 5em;
+            color:#212353;
         }
         &-text{
             @include font-Montserrat-500-18;

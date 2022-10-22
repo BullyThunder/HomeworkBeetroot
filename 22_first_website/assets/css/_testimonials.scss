@@ -1,4 +1,6 @@
 .testimonials{
+    width: 100%;
+   overflow: hidden;
     &__container{
         @extend .container;
     }
@@ -97,6 +99,7 @@
             & span:nth-child(1){
                 @include font-Montserrat-500-18;
                 font-size: 1em;
+                color:#212353;
             }
             & span:nth-child(2){
                 @include font-Montserrat-500-14;
