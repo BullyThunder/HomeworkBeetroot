@@ -8,6 +8,14 @@ h1,h2{
 .container{
     max-width: 1170px;
     margin: 0px auto;
+    width: 90%;
+    @media screen and (max-width: $tablet-resolution){
+      width: 91%;
+    }
+    @media screen and (max-width: $mobile-resulution){
+      width: 94%;
+    }
+
 }
 .fa-icon-twitter{
   padding: 7px 9.57px 7px 10px;
@@ -25,3 +33,7 @@ h1,h2{
     margin: 0;
     padding: 0;
    }
+a{
+  text-decoration: none;
+  color:#000000;
+}

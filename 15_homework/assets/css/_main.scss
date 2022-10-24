@@ -2,13 +2,58 @@
     &__container{
         @extend .container;
     }
-    
+    &__fashion{
+          & img{
+            width: 100%
+          }
+    }
     &__content{
         &-title h1{
             @include Red_hat_Display-48;
         }
         &-title-padding{
             padding-bottom: 70px;
+        }
+    }
+    &-caption{
+        @include Red_hat_Display-28;
+        &-padding{
+            &-top{
+                padding-top: 90px;
+            }
+            &-bottom{
+                padding-bottom: 50px;
+            }
+        }
+        &-text{
+            @include Lato-19;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            max-width: 570px;
+            font-size: 1.36em;
+            @media screen and (max-width: $tablet-resolution){
+                max-width: 700px;
+              }
+              @media screen and (max-width: $mobile-resulution){
+                max-width: 300px;
+                font-size: 1.14em;
+              }
+        }
+    }
+    &__user{
+        &-caption{
+            &-text{
+                @include Lato-19;
+                display: flex;
+                flex-direction: column;
+                row-gap: 45px;
+                &-padding{
+                    padding-top: 20px;
+                    padding-bottom: 90px;
+                }
+
+            }
         }
     }
 }    
