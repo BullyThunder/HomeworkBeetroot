@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    column-gap: 25px;
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        column-gap: 25px;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        max-height: 80px;  
+        width: 81.25%;  
+        &-left{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            &:first-child{
+                margin-left: 20px;
+            }
+        }
+        &-margin{
+            margin-top: 30px;
+        }
+        &-right{
+            display: flex;
+            align-items: center;
+            column-gap: 50px;
+        }
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    &__language{
+        display: flex;
+        column-gap: 20px;
+    }
+    &__icon{
+        display: flex;
+        column-gap: 20px;
+    }
+    &__avatar{
+        padding-right: 20px;
+    }
+    &__svg{
+        &-style{
+            fill:#4F4F4F;
+        }
+}  
+    &__svg:hover{
+        cursor: pointer;
+    }
+    &__svg:hover &__svg-style{
+        fill:#9E8CFC;
+    }
+    &__sidebar{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 51px;
+            margin-left: 70px;
+            &-margin{
+                margin-top: 31px;
+            }
+            &-middle{
+                display: flex;
+                flex-direction: column;
+                row-gap: 26px;
+                align-items: center;
+            }
+        }
+        &__button{
+            display: flex;
+        }
+    }
