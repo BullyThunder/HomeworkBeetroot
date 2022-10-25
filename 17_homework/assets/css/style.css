@@ -37,29 +37,104 @@ h1, h2 {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Bebas Neue Thin";
+  src: url("BebasNeue-Thin.eot");
+  src: url("BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("BebasNeue-Thin.woff") format("woff"), url("BebasNeue-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.main__nav {
+  font-family: "Roboto";
+  font-size: 1.14em;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #000;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
 .main__content {
   display: flex;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .main__content-margin {
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 .main__block-left {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 30.8%;
+  max-height: 611px;
   background-color: #F5F3F9;
 }
 .main__block-left-padding {
   padding-top: 40px;
   margin-top: 31px;
 }
+.main__block-middle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  max-height: 673px;
+  background-color: #F5F3F9;
+}
+.main__block-middle-padding {
+  padding-top: 50px;
+}
+.main__block-image {
+  position: absolute;
+  top: 10px;
+  right: -96px;
+}
+.main__block-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 30.8%;
+  background-color: #F5F3F9;
+  max-height: 611px;
+}
+.main__block-right-padding {
+  padding-top: 40px;
+  margin-top: 31px;
+}
+.main__block-text {
+  font-family: "Bebas Neue Book";
+  font-size: 1.7em;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.main__block-text-padding {
+  padding-bottom: 30px;
+}
 .main__block-text-top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  font-family: "Bebas Neue";
+  row-gap: 20px;
+  font-family: "Bebas Neue Thin";
+}
+.main__block-text-top-padding {
+  padding-bottom: 30px;
 }
 .main__block-text-top-span {
   font-size: 4.3em;
@@ -73,4 +148,78 @@ h1, h2 {
 }
 .main__block-text-top-span span {
   font-size: 0.4em;
+  font-family: "Bebas Neue Thin";
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-align: left;
+}
+.main__block-bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 370px;
+  width: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../img/bg-image-left.png");
+}
+.main__block-bottom-padding {
+  padding-top: 30px;
+}
+.main__block-bottom-middle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 400px;
+  width: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../img/bg-image-left.png");
+}
+.main__button {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main__button-style {
+  background-color: #6FCFFB;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 20px 50px;
+  color: white;
+}
+.main__button-style-middle {
+  background-color: #FD8D7B;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 20px 50px;
+  color: white;
+}
+.main__button-middle-margin {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.main__button-margin {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+.main__middle-text {
+  font-family: "Bebas Neue Book";
+  font-size: 1.7em;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main__button-text {
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #A9A9A9;
 }/*# sourceMappingURL=style.css.map */

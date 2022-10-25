@@ -30,3 +30,12 @@ h1,h2{
     margin: 0;
     padding: 0;
    }
+   @font-face {
+    font-family: "Bebas Neue Thin";
+    src: url('BebasNeue-Thin.eot');
+    src: url('BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeue-Thin.woff') format('woff'),
+    url('BebasNeue-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
