@@ -73,6 +73,8 @@ h1, h2 {
   margin-bottom: 120px;
 }
 .main__block-left {
+  -webkit-transform: translateZ(0);
+  filter: drop-shadow(0px 0px 20px #8677EF);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -86,6 +88,8 @@ h1, h2 {
   margin-top: 31px;
 }
 .main__block-middle {
+  -webkit-transform: translateZ(0);
+  filter: drop-shadow(0px 0px 20px #8677EF);
   position: relative;
   display: flex;
   justify-content: center;

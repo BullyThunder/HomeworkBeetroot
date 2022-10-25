@@ -23,7 +23,8 @@ h1,h2{
   font-size: 7px;
 }
 *, *::before, *::after{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
    
   }
   * {
