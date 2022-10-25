@@ -1,0 +1,76 @@
+body {
+  font-size: 14px;
+  background-color: #9789F9;
+}
+
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container, .main__container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.fa-icon-twitter {
+  padding: 7px 9.57px 7px 10px;
+}
+
+.fa-plus {
+  padding-left: 2px;
+  padding-top: 5px;
+  font-size: 7px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main__content {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.main__content-margin {
+  margin-top: 120px;
+}
+.main__block-left {
+  display: flex;
+  justify-content: center;
+  width: 30.8%;
+  background-color: #F5F3F9;
+}
+.main__block-left-padding {
+  padding-top: 40px;
+  margin-top: 31px;
+}
+.main__block-text-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Bebas Neue";
+}
+.main__block-text-top-span {
+  font-size: 4.3em;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: #000000;
+}
+.main__block-text-top-span sup {
+  font-size: 0.4em;
+}
+.main__block-text-top-span span {
+  font-size: 0.4em;
+}/*# sourceMappingURL=style.css.map */

@@ -32,13 +32,19 @@ h1, h2 {
 }
 
 #header__side-checkbox {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .header {
   display: flex;
   -moz-column-gap: 25px;
        column-gap: 25px;
+}
+.header__side-checkbox {
+  position: relative;
+  top: 100px;
+  left: 10px;
 }
 .header__content {
   display: flex;
@@ -102,6 +108,7 @@ h1, h2 {
   fill: #9E8CFC;
 }
 .header__sidebar {
+  overflow: hidden;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -116,8 +123,32 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   row-gap: 26px;
-  align-items: center;
 }
 .header__button {
   display: flex;
+  align-items: center;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+}
+.header__button-svg {
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  align-items: center;
+}
+.header__stroke {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.header__wind {
+  display: flex;
+  justify-content: start;
+}
+.header__side-button-1 ~ .header__side-checkbox:after {
+  content: "ddsasxa";
+}
+.header__side-button-1:checked ~ .header__side-checkbox:after {
+  content: "dcsdsds";
 }/*# sourceMappingURL=style.css.map */

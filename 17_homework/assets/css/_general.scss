@@ -1,12 +1,17 @@
 body{
     font-size: 14px;
+    background-color: #9789F9;
+}
+span{
+  margin: 0px;
+  padding: 0px;
 }
 h1,h2{
   margin: 0px;
   padding: 0px;
 }
 .container{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 .fa-icon-twitter{
@@ -24,8 +29,4 @@ h1,h2{
   * {
     margin: 0;
     padding: 0;
-   }
-   #header__side-checkbox{
-    position: absolute;
-    opacity: 0;
    }
