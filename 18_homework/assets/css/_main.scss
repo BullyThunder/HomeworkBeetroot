@@ -1,0 +1,170 @@
+.main{
+    &__wrapper{
+	    display: flex;
+        padding-top: 55px;
+        column-gap: 30px;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-size: 15px;
+    }
+     &__container{
+	max-width: 1440px;
+    margin: 0px auto;
+        }
+    &__header_Block{
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-left: 5px;
+        }
+        &__left_Block{
+	padding: 15px 40px;
+    background-color: #FFFFFF;
+    width: 39.6%;
+        }
+        &__name_Profile{
+	display: flex;
+	flex-direction: row;
+    column-gap: 12px;
+}
+&__fist_Name{
+	display: flex;
+	flex-direction: column;
+}
+&__last_Name{
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+}
+&__E-mail{
+	display: flex;
+	flex-direction: column;
+}
+&__e-mail_Text{
+	margin-top: 4px;
+	font-size: 13px;
+	color: #969696;
+}
+&__gender_Selection{
+	margin-top: 15px;
+	display: flex;
+
+	flex-direction: row;
+}
+&__male_Selection{
+	margin-right: 20px;
+}
+&__select_Place{
+	display: flex;
+	flex-direction: row;
+    &_right{
+        display: flex;
+	flex-direction: row;
+        column-gap: 12px;
+    }
+}
+&__select_Country{
+	margin-right: 15px;
+}
+&__download_flex_container{
+	display: flex;
+	flex-direction: row;
+    padding-bottom: 9px;
+}
+
+&__profile_Foto{
+	padding-right: 5px;
+}
+&__input_Download_file{
+	max-width: 138px;
+	background-color: white;
+	color: white;
+}
+&__input_Reset_file{
+	max-width: 30px;
+	background-color: white;
+	color: white;
+	z-index: 3;
+}
+&__button_Text{
+	color: #FFFFFF;
+}
+&__general_Information{
+	display: flex;
+	flex-direction: column;
+}
+&__general_Information_text{
+	margin-top: 15px;
+	font-size: 13px;
+	color: #969696;
+	text-align: center;
+    line-height: 18px;
+}
+&__footer_Block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+&__footer_Block_text{
+	margin-left: 20px;
+}
+&__right_Block_header{
+	padding-right: 80px;
+}
+&__right_Block{
+	padding: 15px 40px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 39.6%;
+}
+&__image_Profile{
+	display: flex;
+	flex-direction: row;
+}
+&__download_File{
+	margin-top: 15px;
+	margin-left: 15px;
+	border: 1px solid #E4E4E4;
+	border-radius: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+&__image_Reset{
+  border: 1px solid #E4E4E4;
+  
+}
+&__reset_File{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+&__select_Style{
+	color: #969696;
+}
+&__image_Man{
+	display: flex;
+	flex-direction: column;
+}
+&__image_Profile_text{
+    font-size: 13px;
+	color: #969696;
+    padding-left: 20px;
+
+}
+&__select{
+    padding-left: 10px;
+    color: #545454;
+    font-family: 'Inter'; 
+        appearance: none; 
+        overflow: hidden;
+        background: url('../img/Icon.png') no-repeat ;  
+        background-position: 96%;
+}
+&__border{
+    border-color: yellow;
+}
+}

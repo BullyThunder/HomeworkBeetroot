@@ -14,16 +14,19 @@
   <link href="https://allfont.ru/allfont.css?fonts=jakobctt-bold&subset=cyrillic-ext" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
   <body>
-<div class="container">  
-  <div class="wrapper">
-     <div class="left_Block">
-      <form action="/" method="/">
-      <h1 class="header_Block">Create an Account</h1>
-      <div class="name_Profile">
-        <div class="fist_Name">
+    <main class="main">
+<div class="main__container">  
+  <div class="main__wrapper">
+     <div class="main__left_Block">
+      <form class="main__forma" action="/" method="/">
+      <h1 class="main__header_Block">Create an Account</h1>
+      <div class="main__name_Profile">
+        <div class="main__fist_Name">
       <h2>First Name</h2>
-       <input type="text" name="first_Name" id="first_Name"> 
+       <input type="text" name="first_Name" id="first_Name" required> 
        </div>
        <div class="last_Name">
       <h2>Last Name</h2>
@@ -32,113 +35,113 @@
        </div>
        <div class="E-mail">
       <h2>E-mail</h2>
-       <input type="email" name="last_Name" id="E-mail">
-       <span class="e-mail_Text">We'll never share your email with anyone else.</span>
+       <input class="main__border" type="email" name="last_Name" id="E-mail">
+       <span class="main__e-mail_Text">We'll never share your email with anyone else.</span>
      </div>
-     <div class="gender_Selection">
-        <div class="male_Selection">
-          <input type="radio" id="male_Selection"
+     <div class="main__gender_Selection">
+        <div  class="main__male_Selection">
+          <input class="custom-radio" type="radio" id="male_Selection"
           name="select" value="gender">
           <label for="male_Selection">Male</label>
      </div>
-     <div class="female_Selection">
-          <input type="radio" id="female_Selection"
+     <div class="main__female_Selection">
+          <input class="custom-radio" type="radio" id="female_Selection"
           name="select" value="gender">
           <label for="female_Selection">Female</label>
     </div>
     </div>
-    <div class="select_Place">
-      <div class="select_Country">
+    <div class="main__select_Place">
+      <div class="main__select_Country">
           <h2>Country</h2>
-            <select  name="Country">
+            <select class="main__select" name="Country">
                <option value disabled selected>Select</option>
                <option value="Ukraine">Ukraine</option>
                <option value="France">France</option>
                <option value="USA">USA</option>
             </select>
       </div> 
-       <div class="select_City">
+       <div class="main__select_City">
           <h2>City</h2>
            <input type="text" name="City" id="city">
       </div> 
     </div>
-    <div class="general_Information">
-    <button name="sign_Up" id="sign_Up"><span class="button_Text">Sign up</span></button> 
-    <span class="general_Information_text">By clicking the 'Sign Up' button, you confirm that you accept our<br>
+    <div class="main__general_Information">
+    <button name="sign_Up" id="sign_Up"><span class="main__button_Text">Sign up</span></button> 
+    <span class="main__general_Information_text">By clicking the 'Sign Up' button, you confirm that you accept our<br>
     <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>  
     </div> 
     <hr>
-    <div class="footer_Block">
+    <div class="main__footer_Block">
       <span>Have an account?</span>
-      <a class="footer_Block_text" href="#">Log In</a>
+      <a class="main__footer_Block_text" href="#">Log In</a>
      
     </div>
   </form>
      </div>
-  <div class="right_Block">
+  <div class="main__right_Block">
      <form action="/" method="/">
-       <h1 class="header_Block right_Block_header">Profile</h1>
-       <div class="image_Profile">
-        <div class="image_Man">
+       <h1 class="main__header_Block main__right_Block_header">Profile</h1>
+       <div class="main__image_Profile">
+        <div class="main__image_Man">
          <img src="assets/img/profile_Image.png" alt="profile">
          </div>
-         <div class="download_flex">
-        <div class="download_flex_container">
-         <div class="download_File">
-         <input class="input_Download_file" type="file" name="profile">
-         <img class="profile_Foto" src="assets/img/profile_foto.png" alt="foto">
+         <div class="main__download_flex">
+        <div class="main__download_flex_container">
+         <div class="main__download_File">
+         <input class="main__input_Download_file" type="file" name="profile">
+         <img class="main__profile_Foto" src="assets/img/profile_foto.png" alt="foto">
           </div>
-          <div class="reset_File">
-           <input  class="input_Reset_file" type="reset" name="profile" >
-           <img class="image_Reset" src="assets/img/profile_Delete.svg" alt="reset">
+          <div class="main__reset_File">
+           <input  class="main__input_Reset_file" type="reset" name="profile" >
+           <img class="main__image_Reset" src="assets/img/profile_Delete.svg" alt="reset">
           </div>
         </div>
           
-             <span class="image_Profile_text">Up to 1 MB (300x300 px)</span>
+             <span class="main__image_Profile_text">Up to 1 MB (300x300 px)</span>
          </div>
        </div>
-    <div class="name_Profile">
-      <div class="fist_Name">
+    <div class="main__name_Profile">
+      <div class="main__fist_Name">
       <h2>Name</h2>
        <input type="text" name="Name" id="first_Names"> 
       </div>
-      <div class="last_Name">
+      <div class="main__last_Name">
       <h2>E-mail</h2>
        <input type="email" name="last_Name" id="e-mail">
       </div>
     </div>
-       <div class="select_Place">
-       <div class="select_Country">
+       <div class="main__select_Place_right">
+       <div class="main__select_Country">
           <h2>Country</h2>
-            <select name="Country">
+            <select class="main__select" name="Country">
                <option value disabled selected>Select</option>
                <option value="Ukraine">Ukraine</option>
                <option value="France">France</option>
                <option value="USA">USA</option>
             </select>
       </div> 
-      <div class="select_City">
+      <div class="main__select_City">
           <h2>City</h2>
            <input type="text" name="Cities" id="cities">
       </div> 
        </div>
-     <div class="name_Profile">
-        <div class="fist_Name">
+     <div class="main__name_Profile">
+        <div class="main__fist_Name">
       <h2>Zip-code</h2>
        <input type="text" name="zip_Code" id="zip_Code"> 
        </div>
-       <div class="last_Name">
+       <div class="main__last_Name">
        <h2>Phone number</h2>
        <input type="tel" name="phone_Number" id="phone_Number">
         </div>
      </div>
      <div>
-     <button name="sign_Up_footer" id="sign_Up_footer"><span class="footer_Button_text">Update</span></button> 
+     <button name="sign_Up_footer" id="sign_Up_footer"><span class="main__footer_Button_text">Update</span></button> 
      </div>
     </form>
   </div>
  </div>
 </div>  
-
+</main>
   </body>
 </html>

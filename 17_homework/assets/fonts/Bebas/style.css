@@ -4,6 +4,6 @@
         url('BebasNeueBook.woff2') format('woff2'),
         url('BebasNeueBook.woff') format('woff'),
         url('BebasNeueBook.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 300px;
     font-style: normal;
   }
