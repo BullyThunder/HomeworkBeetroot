@@ -39,8 +39,14 @@ h1, h2 {
 
 @font-face {
   font-family: "Bebas Neue Thin";
-  src: url("BebasNeue-Thin.eot");
-  src: url("BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("BebasNeue-Thin.woff") format("woff"), url("BebasNeue-Thin.ttf") format("truetype");
+  src: url("../fonts/bebas-neue-thin/bebas-neue-thin.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bebas-neue-thin/bebas-neue-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas-neue-thin/bebas-neue-thin.otf") format("opentype"), url("../fonts/bebas-neue-thin/bebas-neue-thin.svg") format("svg"), url("../fonts/bebas-neue-thin/bebas-neue-thin.ttf") format("truetype"), url("../fonts/bebas-neue-thin/bebas-neue-thin.woff") format("woff"), url("../fonts/bebas-neue-thin/bebas-neue-thin.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Book"), local("Bebas-Neue-Book"), url("BebasNeueBook.woff2") format("woff2"), url("BebasNeueBook.woff") format("woff"), url("BebasNeueBook.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +77,9 @@ h1, h2 {
 .main__content-margin {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+.main__block-hr {
+  font-family: "Bebas Nue";
 }
 .main__block-left {
   -webkit-transform: translateZ(0);
@@ -126,6 +135,7 @@ h1, h2 {
   line-height: 28px;
   letter-spacing: 0.04em;
   text-align: center;
+  text-transform: uppercase;
 }
 .main__block-text-padding {
   padding-bottom: 30px;
@@ -140,6 +150,9 @@ h1, h2 {
 .main__block-text-top-padding {
   padding-bottom: 30px;
 }
+.main__block-text-top-padding-middle {
+  padding-bottom: 40px;
+}
 .main__block-text-top-span {
   font-size: 4.3em;
   line-height: 60px;
@@ -152,11 +165,12 @@ h1, h2 {
 }
 .main__block-text-top-span span {
   font-size: 0.4em;
-  font-family: "Bebas Neue Thin";
+  font-family: "Bebas Neue", cursive;
   font-weight: 300;
   line-height: 16px;
   letter-spacing: 0.08em;
   text-align: left;
+  color: #000000;
 }
 .main__block-bottom {
   display: flex;
@@ -189,6 +203,12 @@ h1, h2 {
   row-gap: 20px;
 }
 .main__button-style {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
   background-color: #6FCFFB;
   border-radius: 30px;
   border-color: transparent;
@@ -201,6 +221,12 @@ h1, h2 {
   border-color: transparent;
   padding: 20px 50px;
   color: white;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 .main__button-middle-margin {
   margin-top: -30px;

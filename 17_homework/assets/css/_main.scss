@@ -40,6 +40,9 @@
         }
     }
     &__block{
+        &-hr{
+            font-family:'Bebas Nue';
+        }
         &-left{
             -webkit-transform: translateZ(0);
             filter: drop-shadow(0px 0px 20px #8677EF);
@@ -128,6 +131,7 @@
             line-height: 28px;
             letter-spacing: 0.04em;
             text-align: center;
+            text-transform: uppercase;
             &-padding{
                 padding-bottom: 30px;
             }
@@ -146,6 +150,9 @@
                 font-family: 'Bebas Neue Thin';
                 &-padding{
                     padding-bottom: 30px;
+                    &-middle{
+                        padding-bottom: 40px;
+                    }
                 }
                 &-span{
                    
@@ -159,11 +166,12 @@
                 }
                 & span{
                     font-size: 0.4em;
-                    font-family: 'Bebas Neue Thin';
+                    font-family:'Bebas Neue', cursive;
                     font-weight: 300;
                     line-height: 16px;
                     letter-spacing: 0.08em;
                     text-align: left;
+                    color:#000000;
                 }
                 }
             }
@@ -218,6 +226,13 @@
                 flex-direction: column;
         row-gap: 20px;
         &-style{
+            font-family: "Bebas Neue";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            text-align: center;
+
             background-color: #6FCFFB;
             border-radius: 30px;
             border-color: transparent;
@@ -229,6 +244,12 @@
                 border-color: transparent;
                 padding: 20px 50px;
                 color:white; 
+                font-family: "Bebas Neue";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                text-align: center;
             }
         } 
         &-middle{
