@@ -1,0 +1,53 @@
+.header{
+    font-family: 'Myriad Pro';
+    &__container{
+        @extend .container;
+    }
+    &__bg{
+        background-color: #121116;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-padding{
+            padding-top: 120px;
+        }
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        &-padding{
+            padding-bottom: 50px;
+        }
+    }
+    &__caption{
+        font-size: 1.6em;
+        width: 19%;
+        display: flex;
+        align-items: center;
+        row-gap: 21px;
+        flex-direction: column;
+        text-transform: uppercase;
+        color:white;
+        &-padding{
+            padding-bottom: 90px;
+        }
+    }
+    &__nav{
+        display: flex;
+        list-style: none;
+        column-gap: 35px;
+    }
+    &__footer{
+        font-size: 1.2em;
+        & span >span{
+            color:#00BFFF;
+        }
+        &-padding{
+            padding-bottom: 38px;
+        }
+    }
+}

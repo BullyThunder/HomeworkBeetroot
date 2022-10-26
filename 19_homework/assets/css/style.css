@@ -1,0 +1,108 @@
+body {
+  font-size: 14px;
+  background-color: black;
+}
+
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container, .header__container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.fa-icon-twitter {
+  padding: 7px 9.57px 7px 10px;
+}
+
+.fa-plus {
+  padding-left: 2px;
+  padding-top: 5px;
+  font-size: 7px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: white;
+  width: 100%;
+  max-width: 230px;
+  height: 2px;
+  border: 1px solid white;
+}
+
+span {
+  color: white;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: local("Myriad Pro Semibold"), local("Myriad-Pro-Semibold"), url("MyriadPro-Semibold.woff2") format("woff2"), url("MyriadPro-Semibold.woff") format("woff"), url("MyriadPro-Semibold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  font-family: "Myriad Pro";
+}
+.header__bg {
+  background-color: #121116;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__content-padding {
+  padding-top: 120px;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+.header__logo-padding {
+  padding-bottom: 50px;
+}
+.header__caption {
+  font-size: 1.6em;
+  width: 19%;
+  display: flex;
+  align-items: center;
+  row-gap: 21px;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.header__caption-padding {
+  padding-bottom: 90px;
+}
+.header__nav {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+.header__footer {
+  font-size: 1.2em;
+}
+.header__footer span > span {
+  color: #00BFFF;
+}
+.header__footer-padding {
+  padding-bottom: 38px;
+}/*# sourceMappingURL=style.css.map */
