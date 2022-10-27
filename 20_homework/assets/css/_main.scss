@@ -1,0 +1,84 @@
+.main{
+    &__container{
+        @extend .container;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+        &-padding{
+            padding-top: 104px;
+            padding-bottom: 100px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 40px;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            &-usual{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                & h2{
+                    @include Montserrat-700;
+                    font-size: 1em;
+                    line-height: 26px;
+                }
+                & span{
+                    @include Montserrat-500;
+                    max-width: 525px;
+                }   
+                }
+            }
+            }
+    &__text{
+        &-caption{
+            @include Montserrat-700;
+            font-size: 2.25em;
+            display: flex;
+            flex-direction: column;
+            &-padding{
+                padding-bottom: 20px;
+            }
+        }
+        &-simple{
+            @include Montserrat-500;
+            &-extra{
+                max-width: 437px;
+                @include Montserrat-500;
+                &-1{
+                    max-width: 486px;
+                @include Montserrat-500;
+                }
+            }
+        }
+        
+    }
+    &__list{
+        @include Montserrat-500;
+        max-width: 497px;
+       display: flex;
+       row-gap: 30px;
+       flex-direction: column;
+       list-style: none;
+       justify-items: center;
+    }
+    &__item{
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+    }
+    &__icon{
+        min-width: 35px;
+        min-height: 35px;
+    }
+}
