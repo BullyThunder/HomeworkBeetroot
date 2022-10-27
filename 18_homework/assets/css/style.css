@@ -63,6 +63,8 @@
 .main__select_Place {
   display: flex;
   flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .main__select_Place_right {
   display: flex;
