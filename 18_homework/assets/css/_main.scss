@@ -6,6 +6,10 @@
         justify-content: center;
         font-family: 'Roboto';
         font-size: 15px;
+		& h2{
+			padding-bottom: 7px;
+			padding-top: 20px;
+		}
     }
      &__container{
 	max-width: 1440px;
@@ -35,7 +39,6 @@
 	flex-direction: column;
 }
 &__last_Name{
-	margin-left: 15px;
 	display: flex;
 	flex-direction: column;
 }
@@ -49,9 +52,8 @@
 	color: #969696;
 }
 &__gender_Selection{
-	margin-top: 15px;
+	padding-top: 20px;
 	display: flex;
-
 	flex-direction: row;
 }
 &__male_Selection{
@@ -67,7 +69,7 @@
     }
 }
 &__select_Country{
-	margin-right: 15px;
+	
 }
 &__download_flex_container{
 	display: flex;
@@ -165,6 +167,6 @@
         background-position: 96%;
 }
 &__border{
-    border-color: yellow;
+   
 }
 }

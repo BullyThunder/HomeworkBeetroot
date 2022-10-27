@@ -16,6 +16,8 @@
   h1,h2,h3,h4,h5,h6{
     font-weight: inherit;
     font-size: inherit;
+    margin: 0;
+    padding: 0;
   }
   body{
     font-size: 15px;
@@ -28,6 +30,7 @@
     min-width: 245px;
     min-height: 38px;
     border-radius: 8px;
+    border: 2px solid #E4E4E4;
 }
 #last_Name{
 	min-width: 245px;
@@ -146,6 +149,6 @@ input:focus{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
   }
   input{
-    border-color: #E4E4E4;
+    border: 2px solid #E4E4E4;
   }
   
