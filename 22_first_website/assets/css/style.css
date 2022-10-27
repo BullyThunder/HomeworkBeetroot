@@ -111,7 +111,7 @@ svg path {
   background-color: #9C69E2;
   cursor: pointer;
   color: #FFFFFF;
-  transition: all 0.3s;
+  transition: all 0.7s;
 }
 .header__button-style-padding {
   padding-left: 23px;
@@ -194,6 +194,11 @@ svg path {
   max-width: 601px;
   font-size: 5em;
   color: #212353;
+  font-family: "Work Sans";
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .save__content-text {
   font-family: "Montserrat";
@@ -225,6 +230,7 @@ svg path {
   background-color: #8A40EE;
   cursor: pointer;
   color: #FFFFFF;
+  transition: all 0.7s;
 }
 .save__content-absolute {
   position: absolute;
@@ -237,6 +243,7 @@ svg path {
 .save__content-image-style {
   max-width: 770px;
   width: 100%;
+  height: unset;
 }
 .save__padding {
   padding-top: 100px;
@@ -268,6 +275,7 @@ svg path {
 }
 .we__content-left-image {
   max-width: 100%;
+  height: unset;
 }
 .we__content-right {
   width: 43%;
@@ -393,6 +401,7 @@ svg path {
   margin-right: -70px;
   max-width: 241px;
   max-height: 180px;
+  margin-bottom: 30px;
 }
 .features__content-block-left-picture_3 {
   z-index: 11;
@@ -405,6 +414,7 @@ svg path {
   margin-right: -60px;
   max-width: 230px;
   max-height: 180px;
+  margin-bottom: 30px;
 }
 .features__content-block-left-icon {
   max-width: 22px;
@@ -686,6 +696,7 @@ svg path {
 }
 .footer-style:hover .footer__arrows {
   stroke: #FFFFFF;
+  transition: all 0.7s;
 }
 .footer__button-style {
   background-color: #FFFFFF;
@@ -725,16 +736,17 @@ svg path {
   background-color: #EB4BAB;
   cursor: pointer;
   color: #FFFFFF;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__button-style:hover {
   background-color: #9C69E2;
   cursor: pointer;
   color: #FFFFFF;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__button-style:hover .footer__arrows {
   stroke: #FFFFFF;
+  transition: all 0.7s;
 }
 .footer__button-style-padding {
   padding-left: 23px;
@@ -823,10 +835,12 @@ svg path {
 .footer__middle-item a:hover {
   color: #8A40EE;
   cursor: pointer;
+  transition: all 0.7s;
 }
 .footer__middle-item a:active {
   color: #8A40EE;
   cursor: pointer;
+  transition: all 0.7s;
 }
 .footer__middle-span {
   font-family: "Montserrat";
@@ -901,33 +915,33 @@ svg path {
 .footer__right-item .footer__right-link:hover .footer__icon {
   fill: #00ACEE;
   background-color: white;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item .footer__right-link_facebook:hover {
   outline: 1px solid #3B5998;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item .footer__right-link_facebook:hover .footer__icon {
   fill: #3B5998;
   background-color: white;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item .footer__right-link_instagram:hover {
   outline: 1px solid #C13584;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item .footer__right-link_instagram:hover .footer__icon {
   fill: #C13584;
   background-color: white;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item .footer__right-link:hover {
   outline: 1px solid #00ACEE;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 .footer__right-item:hover {
   border-color: #00ACEE;
-  transition: 0.3s;
+  transition: all 0.7s;
 }
 
 @media (max-width: 609px) {
@@ -1091,14 +1105,36 @@ svg path {
     margin-right: 0px;
   }
 }
+@media (max-width: 576px) {
+  .features__content-block-left-picture_1 {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 425px) {
   .features__content-block-left-picture_2 {
     margin-right: 0px;
   }
 }
+@media (max-width: 576px) {
+  .features__content-block-left-picture_2 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
 @media (max-width: 425px) {
   .features__content-block-left-picture_3 {
     margin-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .features__content-block-left-picture_3 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .features__content-block-left-picture_4 {
+    margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 425px) {

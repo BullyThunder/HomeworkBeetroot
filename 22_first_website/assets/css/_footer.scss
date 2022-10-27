@@ -41,6 +41,7 @@
     }
     &-style:hover .footer__arrows{
         stroke: #FFFFFF;
+        transition: all .7s;
     }
     &__button-style{
         background-color: #FFFFFF;
@@ -71,7 +72,7 @@
                 background-color: #EB4BAB;
                 cursor: pointer;
                 color:#FFFFFF;
-                transition: .3s;
+                transition: all .7s;
             }
             }
 
@@ -79,10 +80,11 @@
                 background-color: #9C69E2;
                 cursor: pointer;
                 color:#FFFFFF;
-                transition: .3s;
+                transition: all .7s;
             }
             &:hover .footer__arrows{
                 stroke: #FFFFFF;
+                transition: all .7s;
             }
             &-padding{
                 padding-left: 23px;
@@ -163,10 +165,12 @@
             &-item a:hover{
                 color:#8A40EE;
                 cursor: pointer;
+                transition: all .7s;
             }
             &-item a:active{
                 color:#8A40EE;
                 cursor: pointer;
+                transition: all .7s;
             }
             &-span{
                 @include font-Montserrat-600-16; 
@@ -224,33 +228,33 @@
     &__right-item &__right-link:hover &__icon {
         fill: #00ACEE;
         background-color: white;
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item &__right-link_facebook:hover {
         outline: 1px solid #3B5998; 
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item &__right-link_facebook:hover &__icon {
         fill: #3B5998; 
         background-color: white;
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item &__right-link_instagram:hover {
         outline: 1px solid #C13584; 
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item &__right-link_instagram:hover &__icon {
         fill: #C13584; 
         background-color: white;
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item &__right-link:hover {
         outline: 1px solid #00ACEE; 
-        transition: .3s;
+        transition: all .7s;
      }
      &__right-item:hover{
         border-color: #00ACEE;
-        transition: .3s;
+        transition: all .7s;
      }
 
 

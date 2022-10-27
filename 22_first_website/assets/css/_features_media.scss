@@ -16,15 +16,33 @@
                 &-picture_1 { @include media('425px'){
                     margin-right: 0px;
                    }
+                }
+                   &-picture_1 { @include media('576px'){
+                    margin-right: 0px;
+                   }
                 }  
                 &-picture_2 { @include media('425px'){
                     margin-right: 0px;
                    }
-                }  
+                }
+                &-picture_2 { @include media('576px'){
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                   }
+                } 
                 &-picture_3 { @include media('425px'){
                     margin-right: 0px;
                    }
+                } 
+                &-picture_3 { @include media('576px'){
+                    margin-right: 0px;
+                   }
                 }  
+                &-picture_4 { @include media('576px'){
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                   }
+                }
                 &-picture_4 { @include media('425px'){
                     margin-right: 0px;
                    }
