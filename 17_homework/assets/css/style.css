@@ -56,6 +56,104 @@ h1, h2 {
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+0000-007F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0000-007F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+20A0-20CF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+20A0-20CF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+0400-04FF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+2000-206F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+2000-206F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+1E00-1EFF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+1E00-1EFF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+0100-017F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0100-017F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+0180-024F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0180-024F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+0080-00FF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0080-00FF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+2100-214F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+2100-214F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+2200-22FF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+2200-22FF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+2150-218F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+2150-218F;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+E000-F8FF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+E000-F8FF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+02B0-02FF.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+02B0-02FF;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fontstorage.com/st/bebasneue/300U+2070-209F.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+2070-209F;
+}
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,

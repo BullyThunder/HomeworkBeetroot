@@ -16,16 +16,21 @@
     margin: 0px auto;
         }
     &__header_Block{
-        font-family: Roboto;
+        font-family: "Roboto";
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
-        padding-left: 5px;
+		color:#1C1C1C;
+		
+
         }
         &__left_Block{
-	padding: 15px 40px;
+			padding-top: 35px;
+			padding-left: 36px;
+			padding-right: 34px;
+			padding-bottom: 16px;
     background-color: #FFFFFF;
     width: 39.6%;
         }
@@ -33,12 +38,15 @@
 	display: flex;
 	flex-direction: row;
     column-gap: 12px;
+	width: 100%;
 }
 &__fist_Name{
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
 &__last_Name{
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
@@ -63,6 +71,7 @@
 	display: flex;
 	flex-direction: row;
 	column-gap: 10px;
+	width: 100%;
     &_right{
         display: flex;
 	flex-direction: row;
@@ -113,10 +122,10 @@
 	margin-left: 20px;
 }
 &__right_Block_header{
-	padding-right: 80px;
+	padding-bottom: 20px;
 }
 &__right_Block{
-	padding: 15px 40px;
+	padding: 35px 34px 16px 36px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -157,6 +166,7 @@
 
 }
 &__select{
+	border: 1px solid #E4E4E4;
     padding-left: 10px;
     color: #545454;
     font-family: 'Inter'; 
@@ -165,7 +175,10 @@
         background: url('../img/Icon.png') no-repeat ;  
         background-position: 96%;
 }
-&__border{
-   
+&__select_Country{
+	width: 50%;
+}
+&__select_City{
+	width: 50%;
 }
 }

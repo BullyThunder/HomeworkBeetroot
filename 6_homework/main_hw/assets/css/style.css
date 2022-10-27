@@ -126,14 +126,13 @@ h1{
 }
 .image_Block {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   height: 100%;
   padding-left: 56px;
 }
 
 .main_Content{
-  vertical-align: top;
-  padding-top: 109px;
+  vertical-align: middle;
 }
 .design_Content {
   margin-top: 99px;

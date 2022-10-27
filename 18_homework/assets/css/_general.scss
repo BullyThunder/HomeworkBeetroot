@@ -27,38 +27,39 @@
      text-decoration: none;
   }
   #first_Name{
-    min-width: 245px;
+    width: 100%;
     min-height: 38px;
     border-radius: 8px;
 }
 #last_Name{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #E-mail{
-	min-width: 500px;
+	width: 100%;
 	border-radius: 8px;
 	min-height: 38px;
+  margin-bottom: 7px;
 }
 select {
-    min-width: 245px;
+  width: 100%;
     min-height: 38px;
     border-radius:8px;
   }
   #city{
-    min-width: 245px;
+    width: 100%;
     min-height: 38px;
     border-radius: 8px;
   }
   #cities{
-    min-width: 245px;
+    width: 100%;
     min-height: 38px;
     border-radius: 8px;
   }
   
   #sign_Up{
-      margin-top: 15px;
+      margin-top: 20px;
       min-width: 500px;
       min-height: 38px;
       border-radius: 8px;
@@ -67,45 +68,46 @@ select {
   }
   hr{
 	margin: 25px 0px;
+  background-color: #E4E4E4;
 }
 #first_Name{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #first_Names{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #zip_Code{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #e-mail{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #phone_Number{
-	min-width: 245px;
+	width: 100%;
 	min-height: 38px;
 	border-radius: 8px;
 }
 #sign_Up_footer{
-    min-width: 150px;
+  width: 26.3%;
 	min-height: 38px;
 	border-radius: 8px;
 	background-color: #007BFF;
 	color: #FFFFFF;
 	border-color: transparent;
-	margin-top: 15px;
+	margin-top: 20px;
 }
 input:focus{
-    border-color: blue;
+    border-color: #007BFF;
     outline: none;
-    border: 2px solid blue;
+    border: 2px solid  #007BFF;
     border-radius: 0;
 }
 .custom-radio+label {
@@ -148,6 +150,10 @@ input:focus{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
   }
   input{
-    border: 2px solid #E4E4E4;
+    border: 1px solid #E4E4E4;
+    padding-left: 10px;
+  }
+  h2{
+    color: #545454;
   }
   
