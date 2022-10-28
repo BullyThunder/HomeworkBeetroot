@@ -5,6 +5,13 @@
     &-padding{
         padding-top: 36px;
         padding-bottom: 38px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-bottom: 68px;
+          }
+          @media screen and (max-width: $mobile-resulution){
+            padding-bottom: 18px;
+            padding-top: 18px;
+          }
     }
     &-content h2{
         @include lato;

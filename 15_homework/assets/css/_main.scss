@@ -13,6 +13,12 @@
         }
         &-title-padding{
             padding-bottom: 70px;
+            @media screen and (max-width: $tablet-resolution){
+                padding-bottom: 50px;
+              }
+              @media screen and (max-width: $mobile-resulution){
+                padding-bottom: 40px;
+              }
         }
     }
     &-caption{
@@ -20,12 +26,20 @@
         &-padding{
             &-top{
                 padding-top: 90px;
+                @media screen and (max-width: $tablet-resolution){
+                    padding-top: 70px;
+                  }
             }
+            
             &-bottom{
                 padding-bottom: 50px;
+                @media screen and (max-width: $mobile-resulution){
+                    padding-bottom: 40px;
+                  }
             }
         }
         &-text{
+            color:#565656;
             @include Lato-19;
             display: flex;
             flex-direction: column;
@@ -45,12 +59,23 @@
         &-caption{
             &-text{
                 @include Lato-19;
+                font-size: 1.36em;
                 display: flex;
                 flex-direction: column;
                 row-gap: 45px;
+                &_extra{
+                    max-width: 1130px;
+                }
                 &-padding{
                     padding-top: 20px;
                     padding-bottom: 90px;
+                    @media screen and (max-width: $tablet-resolution){
+                        padding-bottom: 70px;
+                      }
+                    &_extra{
+                        padding-bottom: 0px;
+                        padding-top: 20px;
+                    }
                 }
 
             }

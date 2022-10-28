@@ -26,6 +26,9 @@
         &-padding{
         padding-top: 70px;
         padding-bottom: 30px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-bottom: 20px;
+          }
         }
     }
     &__navigation{
@@ -59,7 +62,9 @@
         }
         &-padding{
             padding-top: 70px;
-           
+            @media screen and (max-width: $tablet-resolution){
+                padding-top: 51px;
+              }
         }
   
     }
@@ -119,7 +124,10 @@
         &-padding{
             padding-top: 26px;
             padding-bottom: 30px;
-            
+            @media screen and (max-width: $tablet-resolution){
+                padding-top: 40px;
+                padding-bottom: 50px;
+              }
         }
         &-text{
         font-family: "Lato";
