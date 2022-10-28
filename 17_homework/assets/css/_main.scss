@@ -40,9 +40,7 @@
         }
     }
     &__block{
-        &-hr{
-            font-family:'Bebas Nue';
-        }
+        
         &-left{
             -webkit-transform: translateZ(0);
             filter: drop-shadow(0px 0px 20px #8677EF);
@@ -97,7 +95,9 @@
             top:10px;
             right: -96px;
             &-tooltip{
-                
+                position: relative;   
+                right: 21px;
+                bottom:4px;    
                 
             }
         }
@@ -165,8 +165,7 @@
                     font-size: 0.4em;
                 }
                 & span{
-                    font-size: 0.4em;
-                    font-family:'Bebas Neue', cursive;
+                    font-size: 0.36em;
                     font-weight: 300;
                     line-height: 16px;
                     letter-spacing: 0.08em;

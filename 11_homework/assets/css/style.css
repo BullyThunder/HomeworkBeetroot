@@ -261,8 +261,34 @@ footer{
   padding-top: 43px;
   padding-bottom: 40px;
 }
-.footer-social__icon:hover{
-  fill: #3DB370;
-  stroke: ;
-  cursor: pointer;
+.footer__right-list{
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
 }
+
+.footer__right-item a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEEF3;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 5px;
+}
+.footer__icon{
+  padding: 15px;
+  fill: black;
+  stroke: black;
+  max-width: 50px;
+  max-height: 50px;
+}
+.footer__right-item svg{
+  max-width: 50px;
+  max-height: 50px;
+}
+.footer__right-item .footer__right-link:hover .footer__icon {
+  fill: #00ACEE;
+  transition: all .7s;
+}
+

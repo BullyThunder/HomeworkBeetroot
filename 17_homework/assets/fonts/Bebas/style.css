@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Book'), local('Bebas-Neue-Book'),
-        url('BebasNeueBook.woff2') format('woff2'),
-        url('BebasNeueBook.woff') format('woff'),
-        url('BebasNeueBook.ttf') format('truetype');
-    font-weight: 300px;
-    font-style: normal;
-  }
