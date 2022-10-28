@@ -1,6 +1,9 @@
 .popular{
     &__padding{
         padding-top: 112px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-top: 70px;
+        }
     }
     &__container{
         @extend .container;

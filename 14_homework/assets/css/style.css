@@ -234,11 +234,22 @@ a {
   line-height: 64px;
   letter-spacing: 0.05em;
   text-align: left;
-  font-weight: 600;
+  font-weight: 400;
+}
+@media screen and (max-width: 320px) {
+  .blog h2 {
+    display: flex;
+    justify-content: center;
+  }
 }
 .blog__padding {
   padding-top: 90px;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .blog__padding {
+    padding-top: 70px;
+  }
 }
 .blog__Tech {
   padding-top: 85px;
@@ -281,17 +292,17 @@ a {
 @media screen and (max-width: 608px) {
   .design__content {
     flex-direction: column-reverse;
-    row-gap: 70px;
+    row-gap: 30px;
   }
 }
 @media screen and (max-width: 327px) {
   .design__content {
-    row-gap: 70px;
+    row-gap: 30px;
   }
 }
 @media screen and (max-width: 320px) {
   .design__content {
-    row-gap: 120px;
+    row-gap: 30px;
   }
 }
 .design__content-reverse {
@@ -360,11 +371,6 @@ a {
 .design__text {
   display: flex;
   flex-direction: column;
-}
-@media screen and (max-width: 768px) {
-  .design__text {
-    max-height: 280px;
-  }
 }
 @media screen and (max-width: 608px) {
   .design__text {
@@ -476,6 +482,11 @@ a {
 .posts__padding {
   padding-top: 90px;
 }
+@media screen and (max-width: 768px) {
+  .posts__padding {
+    padding-top: 70px;
+  }
+}
 .posts__caption {
   display: flex;
   justify-content: space-between;
@@ -542,7 +553,7 @@ a {
 @media screen and (max-width: 768px) {
   .posts__content {
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 50px;
   }
 }
 .posts__content-left {
@@ -718,6 +729,11 @@ a {
 
 .popular__padding {
   padding-top: 112px;
+}
+@media screen and (max-width: 768px) {
+  .popular__padding {
+    padding-top: 70px;
+  }
 }
 .popular__caption {
   display: flex;
@@ -908,6 +924,12 @@ a {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1024px) {
+  .load__content {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+}
 .load__content-left {
   display: flex;
   flex-direction: column;
@@ -942,15 +964,33 @@ a {
     text-align: right;
   }
 }
+@media screen and (max-width: 320px) {
+  .load__content-right {
+    text-align: left;
+  }
+}
 .load__content-right-bottom {
   padding-top: 50px;
 }
 .load__content-padding {
   padding-bottom: 90px;
 }
+@media screen and (max-width: 768px) {
+  .load__content-padding {
+    padding-bottom: 70px;
+  }
+}
 .load__arrows:hover::before {
   cursor: pointer;
   content: "Read more";
+  font-size: 1em;
+  color: #000000;
+}
+.load__arrows-style {
+  fill: #7B7B7B;
+}
+.load__arrows:hover .load__arrows-style {
+  fill: #000000;
 }
 
 .footer {

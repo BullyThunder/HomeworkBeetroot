@@ -1,12 +1,19 @@
 .blog{
     & h2{
         @include font-Red-Hat-Display-48;
-        font-weight: 600;
+        font-weight: 400;
+        @media screen and (max-width: $mobile-resulution){
+            display: flex;
+            justify-content: center;
+        }
             
     }
     &__padding{
         padding-top: 90px;
         padding-bottom: 50px;
+        @media screen and (max-width: $tablet-resolution){
+            padding-top: 70px;
+        }
     }
     &__container{
         @extend .container;

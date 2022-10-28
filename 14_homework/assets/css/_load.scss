@@ -43,6 +43,9 @@
         @media screen and (max-width: $tablet-resolution){
             flex-direction: column;
         }
+        @media screen and (max-width: $load-resolution){
+            column-gap: 100px;
+        }
         &-left{
         display: flex;
         flex-direction: column;
@@ -72,16 +75,31 @@
                 width: 100%;
                 text-align: right;
         }
+        @media screen and (max-width:$mobile-resulution){
+            text-align: left;
+    }
         }
         &-right-bottom{
             padding-top: 50px;
         }
         &-padding{
             padding-bottom: 90px;
+            @media screen and (max-width: $tablet-resolution){
+                padding-bottom: 70px;
+        }
         }
     }
     &__arrows:hover::before{
         cursor: pointer;
         content: 'Read more';
+        font-size: 1em;
+        color: #000000;
+    }
+    &__arrows-style{
+        fill: #7B7B7B;
+    }
+
+    &__arrows:hover &__arrows-style{
+        fill: #000000;
     }
 }

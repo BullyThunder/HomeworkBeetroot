@@ -33,13 +33,13 @@
         column-gap: 30px;
         @media screen and (max-width: $tablet-little-resulition){
             flex-direction: column-reverse;
-            row-gap: 70px;
+            row-gap: 30px;
           }
           @media screen and (max-width: $big-mobile-resulution){
-            row-gap: 70px;
+            row-gap: 30px;
           }
           @media screen and (max-width: $mobile-resulution){
-            row-gap: 120px;
+            row-gap: 30px;
           }
         &-reverse{
             display: flex;
@@ -95,9 +95,6 @@
     &__text{
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: $tablet-resolution){
-            max-height: 280px;
-        }
         @media screen and (max-width: $tablet-little-resulition){
             width: 100%;
             max-width: 100%;
