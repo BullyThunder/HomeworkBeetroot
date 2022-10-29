@@ -1,6 +1,7 @@
 body {
   font-size: 14px;
   background-color: black;
+  font-family: "Open sans";
 }
 
 span {
@@ -56,7 +57,7 @@ span {
   font-style: normal;
 }
 .header {
-  font-family: "Myriad Pro";
+  font-family: "Open sans";
 }
 .header__bg {
   background-color: #121116;
