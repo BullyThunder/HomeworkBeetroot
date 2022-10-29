@@ -7,10 +7,29 @@
         display: flex;
         justify-content: center;
         padding-bottom: 41px;
-    }
-    &__image-style{
-        max-width: 20px;
-        max-height: 20px;
+        &-style{
+            max-width: 20px;
+            max-height: 20px;
+        }
+        &-border{
+            position: relative;
+        display: inline-block;
+        }
+        &-hr{
+            border: 0;
+            height: 0.5px;
+            width: 210px;
+            background-color: $gold;
+            &-block{
+                display: flex;
+                justify-content: center;
+                column-gap: 30px;
+                align-items: flex-end;
+                position: relative;
+                top:10px;
+            }
+
+        }
     }
     &__block{
         display: flex;
@@ -19,23 +38,21 @@
     &__container{
         @extend .container;
     }
-    &__image-border{
-        position: relative;
-        display: inline-block;
-    }
-    &__title-padding{
-        padding: 41px 70px 0 85px;
-    }
-    &__title-caption{
-        display: flex;
+    &__title{
+        &-padding{
+            padding: 41px 70px 0 85px;
+        }
+        &-caption{
+            display: flex;
         justify-content: center;
         @include font-Roboto;
         font-size: 2.57em;
         line-height: 42px;
         color:#666666;
-    }
-    &__title-caption-padding{
-        padding-bottom: 30px;
+        &-padding{
+            padding-bottom: 30px;
+        }
+        }
     }
     &__left-padding{
         padding-top: 41px;
@@ -54,27 +71,27 @@
     &__line{
         width: 100px;
         height: 1px;
-        /* границы уберем */
         border: 0;
-        /* установим нужный цвет, например, красный */
-        background-color: #FFCC00
+        background-color: #FFCC00;
+        &-block{
+            display: flex;
+            justify-content: center;
+        }
     }
-    &__line-block{
-        display: flex;
-        justify-content: center;
-}
-    &__title-extra{
-        display: flex;
+    &__title{
+        &-extra{
+            display: flex;
         justify-content: center;
         @include font-Raleway;
         font-size: 1.71em;
         font-weight: 400;
         line-height: 36px;
         color:#666666;
-    }
-    &__title-extra-padding{
-        padding-top: 30px;
+        &-padding{
+            padding-top: 30px;
         padding-bottom: 30px;
+        }
+        }
     }
     &__ul{
         display: flex;
@@ -82,21 +99,6 @@
         justify-content: center;
         column-gap:5px;
     }
-   &__image-hr{
-    border: 0;
-    height: 0.5px;
-    width: 210px;
-    background-color: $gold;
-    
-   }
-   &__image-hr-block{
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-    align-items: flex-end;
-    position: relative;
-    top:10px;
-   }
     &__ul-padding{
         padding-bottom: 49px;
     }
@@ -106,42 +108,46 @@
         font-weight: 500;
         line-height: 24px;
         text-align: center;
+        color:#333333;
+        & p{
+            max-width: 425px;
+        }
+        &-padding{
+            padding-bottom: 20px;
+            padding-left: 85px; 
+        }
    }    
-   &__text-padding{
-        padding-bottom: 20px;
-   }
    &__left{
     width: 50%;
     border-right: 1px solid $gold;
-   }
-   &__left-top{
-    width: 100px;
-    height: 100px;
-    border-top: 1px solid $gold;
-    border-left: 1px solid $gold;
-    position: absolute;
-    top:0px;
-    left:0px;
-
-}
-&__left__right-top{
-    width: 100px;
+    &-top{
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $gold;
+        border-left: 1px solid $gold;
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+    &__right-top{
+        width: 100px;
     height: 100px;
     border-top: 1px solid $gold;
     border-right: 1px solid $gold;
     position: absolute;
     top:0px;
     right:0px;
-}
-&__left-bottom{
-    width: 100px;
+    }
+    &-bottom{
+        width: 100px;
     height: 100px;
     border-bottom: 1px solid $gold;
     border-left: 1px solid $gold;
     position: absolute;
     bottom:4px;
     left:0px;
-}
+    }
+   }
 &__right-bottom{
     width: 100px;
     height: 100px;
@@ -164,39 +170,37 @@
     flex-direction: row;
    }
    &__hr-block{
-        display: flex;
-        justify-content: center;
-        column-gap: 5px;
-   }
-   &__hr-block_2{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+   &_2{
     width: 20px;
     height: 4px;
     border: 0;
     background-color: $gold;
    }
-   &__hr-block_1{
+   &_1{
     width: 10px;
     height: 4px;
     border: 0;
     background-color: $gold;
    }
-  &__hr-block-padding{
+   &-padding{
     padding-bottom: 30px;
-  }
-  &__button-style{
+   }
+}
+  &__button{
+    display: flex;
+    justify-content: center;
+    &-text{
+        font-family: Open Sans;
+        font-size: 1em;
+        @include font-Open_sans; 
+    }
+  &-style{
     padding: 5px 10px;
     background-color: white;
     border: 1px solid $gold;
   }
-  &__button-text{
-    font-family: Open Sans;
-    font-size: 1em;
-    @include font-Open_sans;
   }
-  &__button{
-    display: flex;
-    justify-content: center;
-  }
-
-
 }

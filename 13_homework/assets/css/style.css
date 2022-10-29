@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-size: 14px;
 }
@@ -77,13 +76,28 @@ h1, h2 {
   max-width: 20px;
   max-height: 20px;
 }
-.main__block {
-  display: flex;
-  flex-direction: row;
-}
 .main__image-border {
   position: relative;
   display: inline-block;
+}
+.main__image-hr {
+  border: 0;
+  height: 0.5px;
+  width: 210px;
+  background-color: #FFCC00;
+}
+.main__image-hr-block {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-end;
+  position: relative;
+  top: 10px;
+}
+.main__block {
+  display: flex;
+  flex-direction: row;
 }
 .main__title-padding {
   padding: 41px 70px 0 85px;
@@ -118,9 +132,7 @@ h1, h2 {
 .main__line {
   width: 100px;
   height: 1px;
-  /* границы уберем */
   border: 0;
-  /* установим нужный цвет, например, красный */
   background-color: #FFCC00;
 }
 .main__line-block {
@@ -148,21 +160,6 @@ h1, h2 {
   -moz-column-gap: 5px;
        column-gap: 5px;
 }
-.main__image-hr {
-  border: 0;
-  height: 0.5px;
-  width: 210px;
-  background-color: #FFCC00;
-}
-.main__image-hr-block {
-  display: flex;
-  justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  align-items: flex-end;
-  position: relative;
-  top: 10px;
-}
 .main__ul-padding {
   padding-bottom: 49px;
 }
@@ -173,9 +170,14 @@ h1, h2 {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
+  color: #333333;
+}
+.main__text p {
+  max-width: 425px;
 }
 .main__text-padding {
   padding-bottom: 20px;
+  padding-left: 85px;
 }
 .main__left {
   width: 50%;
@@ -248,10 +250,9 @@ h1, h2 {
 .main__hr-block-padding {
   padding-bottom: 30px;
 }
-.main__button-style {
-  padding: 5px 10px;
-  background-color: white;
-  border: 1px solid #FFCC00;
+.main__button {
+  display: flex;
+  justify-content: center;
 }
 .main__button-text {
   font-family: Open Sans;
@@ -262,7 +263,8 @@ h1, h2 {
   text-align: center;
   color: #666666;
 }
-.main__button {
-  display: flex;
-  justify-content: center;
+.main__button-style {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #FFCC00;
 }/*# sourceMappingURL=style.css.map */
