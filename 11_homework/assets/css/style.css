@@ -157,12 +157,16 @@ header{
 .main-content__icon_6{
   stroke: var(--o_green);
 }
+.main-content__middle__item:hover{
+  border: 1px solid #52C29D;
+}
 .main-content__middle__item:hover .main-content__icon_4{
   fill: #52C29D;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 1px solid #52C29D;
 }
 .main-content__middle__item:hover .main-content__icon_1{
   fill: #CAEFF2;
@@ -227,6 +231,7 @@ header{
   flex-direction: column;
   border: 1px solid #E5EAF4;
   min-width: 370px;
+  border-radius: 8px;;
 }
 footer{
   background-color: #16133D;
@@ -276,19 +281,27 @@ footer{
   max-height: 50px;
   border-radius: 5px;
 }
+.footer__right-item .footer__right-link:hover .footer__icon {
+  fill: #3DB370;
+  stroke: #3DB370;
+}
+.footer__right-item .footer__right-link:hover .footer__icon_facebook {
+  fill: #3DB370;
+  stroke: #3DB370;
+}
 .footer__icon{
-  padding: 15px;
+   padding: 9px;
   fill: black;
   stroke: black;
-  max-width: 50px;
-  max-height: 50px;
+}
+.footer__icon_facebook{
+  padding-left: 10px;
+  padding-right: 9.33px;
+  padding-top: 10px;
+  padding-bottom: 9.33px;
 }
 .footer__right-item svg{
-  max-width: 50px;
-  max-height: 50px;
-}
-.footer__right-item .footer__right-link:hover .footer__icon {
-  fill: #00ACEE;
-  transition: all .7s;
+  width: 38px;
+  height: 38px;
 }
 
