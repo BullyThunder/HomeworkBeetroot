@@ -1,9 +1,8 @@
 // 1 завдання
 let name = prompt("Яке в тебе ім'я?");
-let Inputname = Number(name);
+let Inputname = String(name);
 console.log("Привіт, " + Inputname);
 // 2 завдання
-let year = prompt("Який ваш рік народження", 0);
 const now_year = 2022;
 console.log("Вам зараз " + (now_year - year));
 // 3 завдання
