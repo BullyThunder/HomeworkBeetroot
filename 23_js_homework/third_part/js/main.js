@@ -1,7 +1,7 @@
 // 1 Завдання
 let radius = prompt("Введіть радіус кола", 0);
 const numberP = 3.14;
-let square = numberP * radius * 2;
+let square = numberP * radius * radius;
 console.log("Площа круга дорівнює " + square);
 // 2 Завдання
 let distance = prompt("Які відстань між двома пунктами ", 0);
