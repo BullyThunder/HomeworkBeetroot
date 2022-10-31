@@ -166,6 +166,7 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
 .icon_right{
   color: white;
@@ -181,6 +182,7 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
 .icon_right_still{
   color: white;
@@ -196,6 +198,7 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
 .icon_left_still{
   color: white;
@@ -211,6 +214,7 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
 .icon_right_stills{
   color: white;
@@ -226,6 +230,7 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
 .icon_left_stills{
   color: white;
@@ -241,8 +246,29 @@ i{
   padding: 10px;
   color: #4F4F4F;
   border-radius: 8px;
+  z-index: 1;
 }
-.item:hover.overlay.icon_left:hover{
+.item:hover .overlay .icon_left:hover{
+  opacity: 1;
+   background-color: white;
+ }
+ .item:hover .overlay .icon_right:hover{
+  opacity: 1;
+   background-color: white;
+ }
+ .item:hover .overlay .icon_left_stills:hover{
+  opacity: 1;
+   background-color: white;
+ }
+ .item:hover .overlay .icon_right_stills:hover{
+  opacity: 1;
+   background-color: white;
+ }
+ .item:hover .overlay .icon_left_still:hover{
+  opacity: 1;
+   background-color: white;
+ }
+ .item:hover .overlay .icon_right_still:hover{
   opacity: 1;
    background-color: white;
  }
