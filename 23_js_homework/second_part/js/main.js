@@ -1,6 +1,6 @@
 // 1 завдання
-let name = prompt("Яке в тебе ім'я?");
-let Inputname = String(name);
+let username = prompt("Яке в тебе ім'я?");
+let Inputname = String(username);
 console.log("Привіт, " + Inputname);
 // 2 завдання
 let year = prompt("Введіть Ваш рік народження", 0)
